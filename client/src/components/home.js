@@ -30,7 +30,7 @@ class Home extends React.Component {
                      <img className="img-responsive" src={this.props.image} 
                      alt="homedesigh" />
                     <WelcomeMsg/>
-
+                    <WelcomeMsgTwo/>
 
                 </div>
       		</div>

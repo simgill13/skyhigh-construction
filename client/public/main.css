@@ -144,7 +144,7 @@ body {
 
 .WelcomeMsg{
   position: absolute;
-    top: 30%;
+    top: 25%;
     left: 0;
     right: 0;
     z-index: 100;
@@ -157,25 +157,28 @@ body {
     font-style: italic;
     letter-spacing: 3px;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 .WelcomeMsgTwo{
     position: absolute;
-   top: 30%;
+    top: 20%;
     white-space: normal;
     font-size: 60px;
-        line-height: 60px;
-        font-weight: 400;
-            font-family: "Montserrat UltraLight";
-            text-transform: uppercase;
-letter-spacing: 12px;
+    line-height: 60px;
+    font-weight: 400;
+   font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+     
+}
 
-      width: 100%;
-     
-         color: rgb(255, 255, 255);
-      text-align: center;
-     
+.byDesign{
+  margin-top: -100px;
+   letter-spacing: 8px;
 }
 
 .navList{

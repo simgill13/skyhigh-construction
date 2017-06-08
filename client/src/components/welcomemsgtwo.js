@@ -22,9 +22,11 @@ class WelcomeMsgTwo extends React.Component {
       return (
           <div className="WelcomeMsgTwo">
             <div >
-              <h6> Inspired</h6>
+              <h6 className="Inspired"> Inspired</h6>
+              <h6 className="byDesign"> By Design</h6>
             </div>
-            
+           
+
           </div>
        
 
