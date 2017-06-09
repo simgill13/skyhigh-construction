@@ -353,7 +353,18 @@ body {
 
 }
 
-
+.box1:hover { 
+    background-color: #F9F9F9;
+   
+}
+.box2:hover { 
+    background-color: #F9F9F9;
+   
+}
+.box3:hover { 
+    background-color: #F9F9F9;
+   
+}
 
 .AboutusText{
   margin-top: 80px;
@@ -370,7 +381,7 @@ body {
 .color{
   color: black;
 }
-.iconcolor{
+.iconcolor1,.iconcolor2,.iconcolor3{
   color: #DFBF98;
 }
 
