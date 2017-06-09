@@ -8,6 +8,8 @@ import {toogle,hideLogin} from '../actions/action';
 import Nav from './nav';
 import WelcomeMsg from './welcomemsg';
 import WelcomeMsgTwo from './welcomemsgtwo';
+import WelcomeBtn from './welcomebtn';
+import AboutUs from './aboutus';
 
 class Home extends React.Component {
    
@@ -23,17 +25,22 @@ class Home extends React.Component {
     render() {
     	
         return (
-
-            <div className="mainpic">
-                <Nav/> 
-                <div >
-                     <img className="img-responsive" src={this.props.image} 
-                     alt="homedesigh" />
-                    <WelcomeMsg/>
-                    <WelcomeMsgTwo/>
-
+            <div>
+                <div className="mainpic">
+                    <Nav/> 
+                    <div >
+                         <img className="img-responsive" src={this.props.image} 
+                         alt="homedesigh" />
+                        <WelcomeMsg/>
+                        <WelcomeMsgTwo/>
+                        <WelcomeBtn/>
+                    </div>
+          		</div>
+                <div>
+                    <AboutUs/>
                 </div>
-      		</div>
+            </div>
+
         );
     }
 }

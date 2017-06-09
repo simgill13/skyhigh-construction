@@ -11,7 +11,7 @@ import FontAwesome from 'react-fontawesome';
 
 
 
-class WelcomeMsgTwo extends React.Component {
+class AboutUs extends React.Component {
  
  componentDidMount() {
   
@@ -20,13 +20,16 @@ class WelcomeMsgTwo extends React.Component {
     render() {
        
       return (
-          <div className="WelcomeMsgTwo">
-            <div >
-              <h6 className="Inspired"> Inspired</h6>
-              <h6 className="byDesign"> By Living</h6>
+          <div>
+            
+            <div className="row1">
+              <div className="box1">
+              </div>
+              <div className="box2">
+              </div>
+              <div className="box3">
+              </div>
             </div>
-           
-
           </div>
        
 
@@ -43,4 +46,4 @@ class WelcomeMsgTwo extends React.Component {
 
 
 
-export default connect()(WelcomeMsgTwo);
+export default connect()(AboutUs);

@@ -5,28 +5,42 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import ImageGallery from 'react-image-gallery';
 import Home from './home';
 import FontAwesome from 'react-fontawesome';
+import $ from 'jquery';
 
 
 
 
 
 
-class WelcomeMsgTwo extends React.Component {
+class WelcomeBtn extends React.Component {
  
  componentDidMount() {
+
+      $(function(){
+
+      $(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.WelcomeBtnComponent').fadeOut();
+     }
+    else
+     {
+      $('.WelcomeBtnComponent').fadeIn();
+     }
+    }); 
+         
+    });
   
    }
 
     render() {
        
       return (
-          <div className="WelcomeMsgTwo">
+          <div className="WelcomeBtnComponent">
             <div >
-              <h6 className="Inspired"> Inspired</h6>
-              <h6 className="byDesign"> By Living</h6>
+              <button className="WelcomeBtn"> Explore </button>
             </div>
-           
-
           </div>
        
 
@@ -43,4 +57,4 @@ class WelcomeMsgTwo extends React.Component {
 
 
 
-export default connect()(WelcomeMsgTwo);
+export default connect()(WelcomeBtn);

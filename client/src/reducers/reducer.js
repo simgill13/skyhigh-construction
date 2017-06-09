@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   toogle: true,
-  image:'http://res.cloudinary.com/sds-images/image/upload/v1496601110/homedesign2_qeh7qw.jpg'
+  image:'http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg'
 };
 
 
