@@ -20,14 +20,25 @@ class AboutUs extends React.Component {
     render() {
        
       return (
-          <div>
-            
+          <div className="AboutUsComponent">
+            <h3 className="AboutusText"><span className="blackslash"> /</span>About Us </h3>
             <div className="row1">
-              <div className="box1">
+              <div className="box1 color">
+                <FontAwesome className='fa fa-handshake-o iconcolor ' size='3x' aria-hidden='true'/>
+                <h3 className="boxtext" > Mission </h3>
+                <p> Some text explaining what the mission statement is </p>
               </div>
-              <div className="box2">
+              <div className="box2 color">
+               <FontAwesome className='fa fa-star-o iconcolor ' size='3x' aria-hidden='true'/>
+                <h3 className="boxtext"> Vision </h3>
+                <p> Some text explaining what the mission statement is </p>
+
               </div>
-              <div className="box3">
+              <div className="box3 color">
+               <FontAwesome className='fa fa-briefcase iconcolor' size='3x' aria-hidden='true'/>
+                <h3 className="boxtext"> Work </h3>
+                <p> Some text explaining what the mission statement is </p>
+
               </div>
             </div>
           </div>
