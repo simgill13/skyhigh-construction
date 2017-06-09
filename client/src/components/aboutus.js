@@ -66,6 +66,7 @@ class AboutUs extends React.Component {
                 <p> Some text explaining what the mission statement is </p>
 
               </div>
+              
             </div>
           </div>
        

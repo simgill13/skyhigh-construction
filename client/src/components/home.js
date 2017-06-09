@@ -10,6 +10,7 @@ import WelcomeMsg from './welcomemsg';
 import WelcomeMsgTwo from './welcomemsgtwo';
 import WelcomeBtn from './welcomebtn';
 import AboutUs from './aboutus';
+import Divider from './divider';
 
 class Home extends React.Component {
    
@@ -39,6 +40,7 @@ class Home extends React.Component {
                 <div>
                     <AboutUs/>
                 </div>
+                <Divider/>
             </div>
 
         );
