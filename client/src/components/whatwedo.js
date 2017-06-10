@@ -26,12 +26,45 @@ class WhatWeDo extends React.Component {
             <div className="wwdMainContainerleft">
               <div className="innerleft">
                 <div className="innermostleft">
+                  <div className='wwdicon'>
+                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                  </div>
+                  <div className='wwdtext'>
+                    <h4 className='wwdintrotext'> Introductions</h4>
+                    <p className='wwdparatext'> One senternce of what thisis </p>
+                  </div>  
                 </div>
                 <div className="innermostright">
+                 <div className='wwdicon'>
+                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                  </div>
+                  <div className='wwdtext'>
+                    <h4 className='wwdintrotext'> Introductions</h4>
+                    <p className='wwdparatext'> One senternce of what thisis </p>
+                  </div> 
                 </div>
-              </div>
-              
+                <div className="innermostleft">
+                  <div className='wwdicon'>
+                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                  </div>
+                  <div className='wwdtext'>
+                    <h4 className='wwdintrotext'> Introductions</h4>
+                    <p className='wwdparatext'> One senternce of what thisis </p>
+                  </div> 
+                </div>
+                <div className="innermostright">
+                  <div className='wwdicon'>
+                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                  </div>
+                  <div className='wwdtext'>
+                    <h4 className='wwdintrotext'> Introductions</h4>
+                    <p className='wwdparatext'> One senternce of what thisis </p>
+                  </div> 
+                </div>
+              </div> 
+
             </div>
+
              <div className="wwdMainContainerright">
              <img className="whatwedoPic" src={"http://res.cloudinary.com/sds-images/image/upload/v1497040298/homedesign3_lndyy7.jpg"} 
                          alt="homedesigh" />
