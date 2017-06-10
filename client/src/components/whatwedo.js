@@ -27,7 +27,7 @@ class WhatWeDo extends React.Component {
               <div className="innerleft">
                 <div className="innermostleft">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Introductions</h4>
@@ -36,7 +36,7 @@ class WhatWeDo extends React.Component {
                 </div>
                 <div className="innermostright">
                  <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Introductions</h4>
@@ -45,7 +45,7 @@ class WhatWeDo extends React.Component {
                 </div>
                 <div className="innermostleft">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Introductions</h4>
@@ -54,7 +54,7 @@ class WhatWeDo extends React.Component {
                 </div>
                 <div className="innermostright">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='3x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Introductions</h4>
