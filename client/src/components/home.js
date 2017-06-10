@@ -11,6 +11,7 @@ import WelcomeMsgTwo from './welcomemsgtwo';
 import WelcomeBtn from './welcomebtn';
 import AboutUs from './aboutus';
 import Divider from './divider';
+import WhatWeDo from './whatwedo';
 
 class Home extends React.Component {
    
@@ -41,6 +42,8 @@ class Home extends React.Component {
                     <AboutUs/>
                 </div>
                 <Divider/>
+               
+                <WhatWeDo/>
             </div>
 
         );
