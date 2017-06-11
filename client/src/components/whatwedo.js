@@ -15,7 +15,46 @@ import $ from 'jquery';
 class WhatWeDo extends React.Component {
  
  componentDidMount() {
+  $(function() {
+  $('.innermostleft1').hover(function() {
+    $('.coffeeIcon').css('color', '#DFBF98');
+    $('.BPtext1').css('color', '#464646');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.coffeeIcon ').css('color', '#464646');
+     $('.BPtext1').css('color', '#AAAAAA');
+  });
 
+ $('.innermostright1').hover(function() {
+    $('.laptopicon').css('color', '#DFBF98');
+    $('.BPtext2').css('color', '#464646');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.laptopicon ').css('color', '#464646');
+     $('.BPtext2').css('color', '#AAAAAA');
+  });
+
+
+ $('.innermostleft2').hover(function() {
+    $('.globeicon').css('color', '#DFBF98');
+    $('.BPtext3').css('color', '#464646');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.globeicon ').css('color', '#464646');
+     $('.BPtext3').css('color', '#AAAAAA');
+  });
+
+
+  $('.innermostright2').hover(function() {
+    $('.trophyicon').css('color', '#DFBF98');
+    $('.BPtext4').css('color', '#464646');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.trophyicon ').css('color', '#464646');
+     $('.BPtext4').css('color', '#AAAAAA');
+  });
+
+});
   
    }
 
@@ -25,46 +64,46 @@ class WhatWeDo extends React.Component {
           <div className="WhatWeDoComponent">
             <div className="wwdMainContainerleft">
               <div className="innerleft">
-                <div className="innermostleft">
+                <div className="innermostleft innermostleft1 ">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-coffee  coffeeIcon ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Introduce</h4> 
 
                   </div>
-                  <p className='wwdbottomparatext'> We discuss our game plan. </p>  
+                  <p className='wwdbottomparatext BPtext1'> We discuss our game plan. </p>  
                 </div>
-                <div className="innermostright">
+                <div className="innermostright innermostright1">
                  <div className='wwdicon'>
-                    <FontAwesome className='fa fa-laptop' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-laptop laptopicon' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Design</h4>
                     
                   </div> 
-                   <p className='wwdbottomparatext'> We present our Designs. </p> 
+                   <p className='wwdbottomparatext BPtext2'> We present our Designs. </p> 
                 </div>
-                <div className="innermostleft">
+                <div className="innermostleft innermostleft2">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-globe ' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-globe globeicon ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> experiment</h4>
                    
                   </div> 
-                  <p className='wwdbottomparatext'> We research for eco friendly materials. </p> 
+                  <p className='wwdbottomparatext BPtext3'> We research for eco friendly materials. </p> 
 
                 </div>
-                <div className="innermostright">
+                <div className="innermostright innermostright2">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-trophy  ' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-trophy trophyicon ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
                     <h4 className='wwdintrotext'> Deliver</h4>
                    
                   </div> 
-                  <p className='wwdbottomparatext'> We Deliver!. </p> 
+                  <p className='wwdbottomparatext BPtext4'> We Deliver! </p> 
                 </div>
               </div> 
 

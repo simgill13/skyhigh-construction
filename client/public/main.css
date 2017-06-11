@@ -490,7 +490,10 @@ text-align: center;
 /*  border: 4px dashed red;*/
 }
 
+
+
 .innermostright{
+  padding-right: 40px;
   text-align: center;
   float: right;
    width: 50%;
@@ -512,6 +515,7 @@ text-align: center;
 }
 
 .innermostright2{
+  padding-right: 40px;
   text-align: center;
   float: right;
    width: 50%;
@@ -531,8 +535,19 @@ display: inline-block;
 
 }
 
-.wwdintrotext,.wwdparatext{
+.coffeeIcon{
+  color: #464646;
+}
+.laptopicon{
+  color: #464646;
+}
 
+.globeicon{
+  color: #464646;
+}
+
+.trophyicon{
+  color: #464646;
 }
 
 .wwdintrotext{
@@ -555,8 +570,28 @@ line-height: 38px;
 .wwdbottomparatext{
   width: 120px;
   margin-left: 55%;
+  
+}
+.wwdbottomparatextright1{
+  width: 120px;
+  margin-left: 51%;
+  
 }
 
 
+.BPtext1{
+  color: #AAAAAA;
+}
+
+.BPtext2{
+  color: #AAAAAA;
+}
 
 
+.BPtext3{
+  color: #AAAAAA;
+}
+
+.BPtext4{
+  color: #AAAAAA;
+}
