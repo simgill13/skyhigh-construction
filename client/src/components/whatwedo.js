@@ -30,36 +30,41 @@ class WhatWeDo extends React.Component {
                     <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Introductions</h4>
-                    <p className='wwdparatext'> One senternce of what thisis </p>
-                  </div>  
+                    <h4 className='wwdintrotext'> Introduce</h4> 
+
+                  </div>
+                  <p className='wwdbottomparatext'> We discuss our game plan. </p>  
                 </div>
                 <div className="innermostright">
                  <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-laptop' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Introductions</h4>
-                    <p className='wwdparatext'> One senternce of what thisis </p>
+                    <h4 className='wwdintrotext'> Design</h4>
+                    
                   </div> 
+                   <p className='wwdbottomparatext'> We present our Designs. </p> 
                 </div>
                 <div className="innermostleft">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-globe ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Introductions</h4>
-                    <p className='wwdparatext'> One senternce of what thisis </p>
+                    <h4 className='wwdintrotext'> experiment</h4>
+                   
                   </div> 
+                  <p className='wwdbottomparatext'> We research for eco friendly materials. </p> 
+
                 </div>
                 <div className="innermostright">
                   <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  ' size='2x' aria-hidden='true'/>
+                    <FontAwesome className='fa fa-trophy  ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Introductions</h4>
-                    <p className='wwdparatext'> One senternce of what thisis </p>
+                    <h4 className='wwdintrotext'> Deliver</h4>
+                   
                   </div> 
+                  <p className='wwdbottomparatext'> We Deliver!. </p> 
                 </div>
               </div> 
 
