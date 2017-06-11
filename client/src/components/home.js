@@ -30,9 +30,9 @@ class Home extends React.Component {
             <div>
                 <div className="mainpic">
                     <Nav/> 
-                    <div >
-                         <img className="img-responsive" src={this.props.image} 
-                         alt="homedesigh" />
+                    <div className="video-spot" >
+                         {/*<img className="img-responsive" src={this.props.image} 
+                         alt="homedesigh" /> */}
                         <WelcomeMsg/>
                         <WelcomeMsgTwo/>
                         <WelcomeBtn/>
@@ -42,7 +42,7 @@ class Home extends React.Component {
                     <AboutUs/>
                 </div>
                 <Divider/>
-               
+
                 <WhatWeDo/>
             </div>
 

@@ -139,6 +139,7 @@ body {
     top: 0; /* Position the navbar at the top of the page */
       overflow: hidden;
       width: 100%;
+      z-index: 3000;
 }
 
 
@@ -187,7 +188,16 @@ body {
 
 
 
-
+.video-spot{
+  position:relative;  
+ background-image: url("http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg");
+ width: 100%;
+ height: 650px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+  
+}
 
 
 
