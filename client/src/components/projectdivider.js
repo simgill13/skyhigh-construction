@@ -23,7 +23,15 @@ class Pror extends React.Component {
        
       return (
           <div className="Pror">
-          <h1> this is from Project divder component </h1>
+          <div className="projectTextline">
+              <h1 className="projectsText"> <span className="blackslash"> / </span> Projects </h1>
+          </div>
+          <div className="buttons">
+          <button className="actbuttons"> Project 1 </button>
+          <button className="actbuttons"> Project 2 </button>
+          <button className="actbuttons"> Project 3 </button>
+          <button className="actbuttons"> Project 4 </button>
+          </div>
           
 
            

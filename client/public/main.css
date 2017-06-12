@@ -615,12 +615,32 @@ line-height: 38px;
 
 .Pror{
   width: 100%;
- color: #3B3B3B;
- height: 500px;
- background-color: grey;
+ height: 300px;
+ background-color: #3B3B3B;
 }
 
 
+.projectsText{
+  margin-top: 30px;
+  text-align: center;
+      color: white;
+    letter-spacing: 10px;
+        font-weight: normal;
+            font-family: 'Montserrat UltraLight';
+            text-transform: uppercase;
+    font-size: 30px;
+    line-height: inherit;
+}
+.projectTextline{
+  padding-top: 5px;
+}
+
+.buttons{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
 
 /*======================================================================================*/
 

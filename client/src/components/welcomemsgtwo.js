@@ -6,14 +6,31 @@ import ImageGallery from 'react-image-gallery';
 import Home from './home';
 import FontAwesome from 'react-fontawesome';
 
-
+import $ from 'jquery';
 
 
 
 
 class WelcomeMsgTwo extends React.Component {
  
+ 
  componentDidMount() {
+
+      $(function(){
+
+      $(window).scroll(function() {
+
+    if ($(this).scrollTop()>300)
+     {
+        $('.WelcomeMsgTwo').fadeOut();
+     }
+    else
+     {
+      $('.WelcomeMsgTwo').fadeIn();
+     }
+    }); 
+         
+    });
   
    }
 
