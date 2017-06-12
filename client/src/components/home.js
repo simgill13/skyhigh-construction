@@ -12,6 +12,7 @@ import WelcomeBtn from './welcomebtn';
 import AboutUs from './aboutus';
 import Divider from './divider';
 import WhatWeDo from './whatwedo';
+import Pror from './projectdivider';
 
 class Home extends React.Component {
    
@@ -38,12 +39,20 @@ class Home extends React.Component {
                         <WelcomeBtn/>
                     </div>
           		</div>
+
                 <div>
                     <AboutUs/>
+                     <Divider/>
+                    <WhatWeDo/>
+                    <Pror/>
+                       
                 </div>
-                <Divider/>
+               
+                
 
-                <WhatWeDo/>
+
+
+              
             </div>
 
         );

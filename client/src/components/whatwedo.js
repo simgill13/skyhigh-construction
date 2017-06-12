@@ -12,6 +12,7 @@ import $ from 'jquery';
 
 
 
+
 class WhatWeDo extends React.Component {
  
  componentDidMount() {
@@ -61,6 +62,7 @@ class WhatWeDo extends React.Component {
     render() {
        
       return (
+          
           <div className="WhatWeDoComponent">
             <div className="wwdMainContainerleft">
               <div className="innerleft">
@@ -69,7 +71,7 @@ class WhatWeDo extends React.Component {
                     <FontAwesome className='fa fa-coffee  coffeeIcon ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Introduce</h4> 
+                    <h4 className='wwdintrotext coffeeIcon'> Introduce</h4> 
 
                   </div>
                   <p className='wwdbottomparatext BPtext1'> We discuss our game plan. </p>  
@@ -79,7 +81,7 @@ class WhatWeDo extends React.Component {
                     <FontAwesome className='fa fa-laptop laptopicon' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Design</h4>
+                    <h4 className='wwdintrotext laptopicon'> Design</h4>
                     
                   </div> 
                    <p className='wwdbottomparatext BPtext2'> We present our Designs. </p> 
@@ -89,7 +91,7 @@ class WhatWeDo extends React.Component {
                     <FontAwesome className='fa fa-globe globeicon ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> experiment</h4>
+                    <h4 className='wwdintrotext globeicon'> experiment</h4>
                    
                   </div> 
                   <p className='wwdbottomparatext BPtext3'> We research for eco friendly materials. </p> 
@@ -100,21 +102,25 @@ class WhatWeDo extends React.Component {
                     <FontAwesome className='fa fa-trophy trophyicon ' size='2x' aria-hidden='true'/>
                   </div>
                   <div className='wwdtext'>
-                    <h4 className='wwdintrotext'> Deliver</h4>
+                    <h4 className='wwdintrotext trophyicon'> Deliver</h4>
                    
                   </div> 
-                  <p className='wwdbottomparatext BPtext4'> We Deliver! </p> 
+                  <p className='wwdbottomparatext BPtext4'> We Deliver final product! </p> 
                 </div>
               </div> 
 
             </div>
 
-             <div className="wwdMainContainerright">
-             <img className="whatwedoPic" src={"http://res.cloudinary.com/sds-images/image/upload/v1497040298/homedesign3_lndyy7.jpg"} 
+            <div className="wwdMainContainerright">
+                <img className="whatwedoPic" src={"http://res.cloudinary.com/sds-images/image/upload/v1497040298/homedesign3_lndyy7.jpg"} 
                          alt="homedesigh" />
             </div>
+
+           
+
           
           </div>
+            
        
 
         )

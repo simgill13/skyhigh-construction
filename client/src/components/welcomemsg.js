@@ -27,7 +27,7 @@ class WelcomeMsg extends React.Component {
                transitionEnterTimeout = {5000} transitionLeaveTimeout = {5000}>
           <div className="WelcomeMsg ">
             <div className="topTag">
-              <h6> If you can dream it, we can create it</h6>
+              <h6 > If you can dream it, we can create it</h6>
             </div>
           </div>
         </ReactCSSTransitionGroup>
