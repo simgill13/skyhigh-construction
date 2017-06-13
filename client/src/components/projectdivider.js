@@ -6,7 +6,7 @@ import ImageGallery from 'react-image-gallery';
 import Home from './home';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
-
+import Sliderone from './sliderone';
 
 
 
@@ -23,17 +23,17 @@ class Pror extends React.Component {
        
       return (
           <div className="Pror">
-          <div className="projectTextline">
-              <h1 className="projectsText"> <span className="blackslash"> / </span> Projects </h1>
-          </div>
-          <div className="buttons">
-          <button className="actbuttons"> Project 1 </button>
-          <button className="actbuttons"> Project 2 </button>
-          <button className="actbuttons"> Project 3 </button>
-          <button className="actbuttons"> Project 4 </button>
-          </div>
+            <div className="projectTextline">
+                <h1 className="projectsText"> <span className="blackslash"> / </span> Projects </h1>
+            </div>
+            <div className="buttonsDiv">
+              <button className="actbuttons"> Project 1 </button>
+              <button className="actbuttons"> Project 2 </button>
+              <button className="actbuttons"> Project 3 </button>
+              <button className="actbuttons"> Project 4 </button>
+            </div>
           
-
+            <Sliderone/>
            
           </div>
        

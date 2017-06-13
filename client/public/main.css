@@ -635,13 +635,32 @@ line-height: 38px;
   padding-top: 5px;
 }
 
-.buttons{
+.buttonsDiv{
   width: 100%;
   padding-top: 10px;
   text-align: center;
   display: inline-block;
 }
 
+.actbuttons{
+ margin-left: 20px;
+ padding: 10px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+
+     font-weight: normal;
+     font-family: 'Raleway', sans-serif;
+         text-transform: uppercase;
+         background-color:  #5C5C5C;
+   
+      border: none;
+      border-radius: 20px;
+}
+
+.actbuttons:hover{
+   background-color:  #73685A;
+}
 /*======================================================================================*/
 
 
