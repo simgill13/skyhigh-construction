@@ -3,7 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
-import ImageGallery from 'react-image-gallery';
+// import ImageGallery from 'react-image-gallery';
 import Home from './home';
 let imgone = 'http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg'
 let imgtwo = 'http://res.cloudinary.com/sds-images/image/upload/v1496601110/homedesign2_qeh7qw.jpg'

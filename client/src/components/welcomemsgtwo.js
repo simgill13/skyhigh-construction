@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
-import ImageGallery from 'react-image-gallery';
+// import ImageGallery from 'react-image-gallery';
 import Home from './home';
 import FontAwesome from 'react-fontawesome';
 
