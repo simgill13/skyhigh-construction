@@ -39,8 +39,8 @@ class WelcomeMsgTwo extends React.Component {
       return (
           <div className="WelcomeMsgTwo">
             
-              <h6 className="Inspired"> Inspired</h6>
-              <h6 className="byDesign"> By Living</h6>
+              <h6 className="Inspired welcomemesgsize"> Inspired</h6>
+              <h6 className="byDesign welcomemesgsize "> By Living</h6>
             
            
 
