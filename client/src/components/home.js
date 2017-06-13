@@ -13,6 +13,7 @@ import AboutUs from './aboutus';
 import Divider from './divider';
 import WhatWeDo from './whatwedo';
 import Pror from './projectdivider';
+import Sliderone from './sliderone';
 
 class Home extends React.Component {
    
@@ -45,6 +46,7 @@ class Home extends React.Component {
                      <Divider/>
                     <WhatWeDo/>
                     <Pror/>
+                    <Sliderone/>
                        
                 </div>
                

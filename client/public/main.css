@@ -618,7 +618,7 @@ line-height: 38px;
 
 .Pror{
   width: 100%;
- height: 100%;
+ height: 190px;
  background-color: #3B3B3B;
 }
 
@@ -668,8 +668,11 @@ line-height: 38px;
 .Sliderone{
   width: 100%;
   height: 100%;
-  margin-top: 30px;
+/*  margin-top: 40px;*/
 
+}
+.backiconse{
+  margin-top: 250px;
 }
 /*======================================================================================*/
 

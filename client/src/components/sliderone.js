@@ -66,11 +66,12 @@ class Sliderone extends React.Component {
         </div>
       </div>
       <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        
+        <span > <FontAwesome className='fa fa-viacoin backiconse' size='1x' aria-hidden='true'/> </span>
         <span className="sr-only">Previous</span>
       </a>
       <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span > <FontAwesome className='fa fa-viacoin backiconse' size='1x' aria-hidden='true'/> </span>
         <span className="sr-only">Next</span>
       </a>
     </div>

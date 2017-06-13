@@ -33,7 +33,7 @@ class Pror extends React.Component {
               <button className="actbuttons"> Project 4 </button>
             </div>
           
-            <Sliderone/>
+            
            
           </div>
        
