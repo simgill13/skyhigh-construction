@@ -59,7 +59,7 @@ class Sliderone extends React.Component {
           <div className="container">
             <div className="carousel-caption">
               <h1>One more for good measure.</h1>
-              <p>some shit in writing here . a paragrash explaining the picture or project. useemail text from email.</p>
+              <p>some stuff in writing here . a parrgraph explaining the picture or project. use text from email.</p>
               
             </div>
           </div>
@@ -67,11 +67,11 @@ class Sliderone extends React.Component {
       </div>
       <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         
-        <span > <FontAwesome className='fa fa-viacoin backiconse' size='1x' aria-hidden='true'/> </span>
+        <span > <FontAwesome className='fa fa-chevron-left backiconse' size='1x' aria-hidden='true'/> </span>
         <span className="sr-only">Previous</span>
       </a>
       <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span > <FontAwesome className='fa fa-viacoin backiconse' size='1x' aria-hidden='true'/> </span>
+        <span > <FontAwesome className='fa fa-chevron-right backiconse' size='1x' aria-hidden='true'/> </span>
         <span className="sr-only">Next</span>
       </a>
     </div>
