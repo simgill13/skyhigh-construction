@@ -46,16 +46,34 @@ class ContactUs extends React.Component {
     render() {
        
       return (
-          <div className="AboutUsComponent">
-            <h3 className="AboutusText"><span className="blackslash"> /</span>Contact Us </h3>
-            <div className="row1">
-              <div className="box1 color">
-                <FontAwesome className='fa fa-phone iconcolor1 ' size='3x' aria-hidden='true'/>
-                <h3 className="boxtext" > Houres of Operation </h3>
-                <p> Some text explaining what the mission statement is </p>
+          <div className="ourteamcomponent">
+            <h3 className="ourteam"><span className="blackslash"> /</span>Our Team </h3>
+            <div className="ourTeamMainDiv">
+              <div className="member"> 
+                <div className="memberPic">
+                </div>
+                <h3> Sim Gill </h3>
+                <p>  Project Manager </p>
+                <p> Over 5 years of extensive experience working as a project manager </p>
+                <div className="memberIcons">
+                <FontAwesome className='fa fa-envelope-o memicon' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-facebook-official memicon' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-instagram memicon' size='2x' aria-hidden='true'/>
+                </div>
               </div>
-            
               
+              <div className="member rightmemberdiv"> 
+                <div className="memberPic">
+                </div>
+                <h3> Name </h3>
+                <p> Role </p>
+                <p> Over 5 years of extensive experience working as a project manager </p>
+                <div className="memberIcons">
+                 <FontAwesome className='fa fa-envelope-o memicon' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-facebook-official memicon' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-instagram memicon' size='2x' aria-hidden='true'/>
+                </div>
+              </div>
               
 
             </div>

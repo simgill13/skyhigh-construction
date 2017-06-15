@@ -685,6 +685,142 @@ line-height: 38px;
 }
 /*======================================================================================*/
 
+.Login {
+  background-color: grey;
+  height: 400px;
+  width: 400px;
+}
+
+.ourteamcomponent{
+  width: 100%;
+  height: 100%;
+}
+
+.ourTeamMainDiv{
+
+  width: 100%;
+  height:100%;
+ text-align: center;
+  border: 4px dashed white;
+
+}
+
+.member{
+   vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  height:300px;
+  border: 4px dashed white;
+  text-align: center;
+}
+.rightmemberdiv{
+  margin-left: 120px;
+}
+
+.memberPic{
+  background-image: url("http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg");
+   background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+margin: auto;
+  width: 120px;
+  height:120px;
+  border: 4px solid #DFBF98;
+  border-radius: 90px;
+
+}
+
+.memicon{
+  display: inline-block;
+  padding-left: 10px;
+  color: #DFBF98;
+}
+
+.ourteam{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+      color: #464646;
+    letter-spacing: 10px;
+        font-weight: normal;
+            font-family: 'Montserrat UltraLight';
+            text-transform: uppercase;
+    font-size: 30px;
+    line-height: inherit;
+}
+
+.lastcomponent{
+  width: 100%;
+  /*height: 100%;*/
+  height: 600px;
+
+   background-image: url(" http://res.cloudinary.com/sds-images/image/upload/v1497488429/design10_wswbbv.jpg");
+     background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ text-align: center;
+}
+.lasttopwriting{
+  width: 100%;
+ /* margin-top: 80px;*/
+  margin: auto;
+ /* border: 4px dashed white;*/
+  
+  height: 200px;
+
+}
+.lastcomtext{
+  padding-top: 100px;
+  margin-top: 80px;
+  text-align: center;
+      color: white;
+    letter-spacing: 10px;
+        font-weight: normal;
+            font-family: 'Montserrat UltraLight';
+            text-transform: uppercase;
+    font-size: 30px;
+    line-height: inherit;
+}
 
 
+.bottomlastcomponentdiv{
+  width: 100%;
+  height: 400px;
+  /* display: inline-block;*/
+   /*border: 4px dashed red;*/
 
+}
+.bottomlastleftcomponentdiv{
+    vertical-align: top;
+  display: inline-block;
+  width: 45%;
+  height: 390px;
+/*  border: 4px dashed blue;*/
+}
+
+.bottomlastrightcomponentdiv{
+    vertical-align: top;
+   display: inline-block;
+   width: 55%;
+  height: 390px;
+ /* border: 4px dashed blue;*/
+}
+
+.clockinconDiv{
+  padding-top: 100px;
+}
+
+.clockicon{
+  color: #DFBF98;
+
+}
+
+.clockicontext{
+
+  color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.clockicontexttwo{
+  color: #DFBF98;
+}

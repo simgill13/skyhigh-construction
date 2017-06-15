@@ -38,27 +38,27 @@ class Sliderone extends React.Component {
           <img className="img-responsive" src={"http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg"}  alt="homedesigh" /> 
           <div className="container">
             <div className="carousel-caption">
-              <h1>Example headline.</h1>
+              <h1>Living Room</h1>
               
               
             </div>
           </div>
         </div>
         <div className="item">
-          <img className="img-responsive" src={"http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg"}  alt="homedesigh" /> 
+          <img className="img-responsive" src={"http://res.cloudinary.com/sds-images/image/upload/v1497488420/design7_yiyxso.jpg"}  alt="homedesigh" /> 
           <div className="container">
             <div className="carousel-caption">
-              <h1>Another example headline.</h1>
+              <h1>Living Room</h1>
               
               
             </div>
           </div>
         </div>
         <div className="item">
-          <img className="img-responsive" src={"http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg"}  alt="homedesigh" /> 
+          <img className="img-responsive" src={"http://res.cloudinary.com/sds-images/image/upload/v1497488420/design7_yiyxso.jpg"}  alt="homedesigh" /> 
           <div className="container">
             <div className="carousel-caption">
-              <h1>One more for good measure.</h1>
+              <h1>Living Room</h1>
               <p>some stuff in writing here . a parrgraph explaining the picture or project. use text from email.</p>
               
             </div>

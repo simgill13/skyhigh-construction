@@ -15,6 +15,7 @@ import WhatWeDo from './whatwedo';
 import Pror from './projectdivider';
 import Sliderone from './sliderone';
 import ContactUs from './contactus';
+import Last from './last';
 import $ from 'jquery';
 
 class Home extends React.Component {
@@ -87,6 +88,7 @@ class Home extends React.Component {
                     <Pror/>
                     <Sliderone/>
                     <ContactUs/>
+                    <Last/>
                        
                 </div>
                
