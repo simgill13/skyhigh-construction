@@ -153,7 +153,7 @@ body {
 
 .WelcomeMsg{
   position: absolute;
-    top: 25%;
+    top: 30%;
     left: -13px;
     right: 0;
     z-index: 100;
@@ -170,13 +170,13 @@ body {
     
 }
 .welcomemesgsize{
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 100;
 }
 
 .WelcomeMsgTwo{
     position: absolute;
-    top: 32%;
+    top: 35%;
     white-space: normal;
     font-size: 90px;
     line-height: 30px;
@@ -204,7 +204,7 @@ body {
   position:relative;  
  background-image: url("http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg");
  width: 100%;
- height: 650px;
+ height:100vh;
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
@@ -235,8 +235,10 @@ body {
   font-family: 'Raleway', sans-serif;
   z-index: 200;
   margin-left: 43%;
-  color: white;
-  background-color: Transparent;
+  color: black;
+   border-width: 0px;
+      border-radius: 5px;
+  background-color: white;
   border-width: .5px;
   -webkit-animation: mymove 5s 1; /* Safari 4.0 - 8.0 */
     animation: mymove 3s 1;
@@ -308,11 +310,97 @@ body {
 
 
 .WelcomeBtn:hover { 
-    background-color: white;
+  cursor: pointer;
+   /* background-color: white;
     color: black;
       border-width: 0px;
-      border-radius: 5px;
+      border-radius: 5px;*/
+
 }
+
+.welcomebuttontext{
+
+cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.welcomebuttontext:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.WelcomeBtn:hover .welcomebuttontext {
+  padding-right: 25px;
+}
+
+
+.WelcomeBtn:hover .welcomebuttontext:after {
+  opacity: 1;
+  right: 0;
+  /*font-size: 4px;*/
+}
+
+
+/*.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .WelcomeBtn:focus{
   outline:0;
 }
@@ -685,11 +773,7 @@ line-height: 38px;
 }
 /*======================================================================================*/
 
-.Login {
-  background-color: grey;
-  height: 400px;
-  width: 400px;
-}
+
 
 .ourteamcomponent{
   width: 100%;
@@ -794,7 +878,7 @@ margin: auto;
 .bottomlastleftcomponentdiv{
     vertical-align: top;
   display: inline-block;
-  width: 45%;
+  width: 50%;
   height: 390px;
 /*  border: 4px dashed blue;*/
 }
@@ -802,7 +886,7 @@ margin: auto;
 .bottomlastrightcomponentdiv{
     vertical-align: top;
    display: inline-block;
-   width: 55%;
+   width: 50%;
   height: 390px;
  /* border: 4px dashed blue;*/
 }
@@ -824,3 +908,22 @@ margin: auto;
 .clockicontexttwo{
   color: #DFBF98;
 }
+/*=========================================Login */
+
+.LoginComponent {
+   border: 4px dashed blue;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.Login{
+   border: 4px dashed red;
+  width: 100%;
+  height: 100%;
+}
+
+
+

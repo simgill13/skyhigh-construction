@@ -39,7 +39,8 @@ class WelcomeBtn extends React.Component {
       return (
           <div className="WelcomeBtnComponent">
             <div >
-             <a href="#explore"> <button className="WelcomeBtn"> Explore </button></a>
+             <a href="#explore"> <button className="WelcomeBtn"><span className="welcomebuttontext"> Explore </span></button></a>
+
             </div>
           </div>
        

@@ -35,7 +35,7 @@ class Last extends React.Component {
                   <FontAwesome className='fa fa-clock-o clockicon' size='4x' aria-hidden='true'/>
                 </div>
                 <div className="clockicontext">
-                  <h1 >Working Houres </h1>
+                  <h1 >Working Hours </h1>
                   <p className="clockicontexttwo">Mon - Fri 8am to 5pm </p>
                   <p className="clockicontexttwo">Sat 8am to 12pm </p>
                   <p className="clockicontexttwo">Sun Closed </p>
