@@ -911,7 +911,7 @@ margin: auto;
 /*=========================================Login */
 
 .LoginComponent {
-   border: 4px dashed blue;
+  /* border: 4px dashed blue;*/
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -921,10 +921,90 @@ margin: auto;
 
 
 .Login{
-   border: 4px dashed red;
+  margin-top: 200px;
+/*   border: 4px dashed red;*/
   width: 100%;
   height: 100%;
 }
 
 
+.logintext{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+.inputemail{
+  margin-top: 20px;
+   border: 2px solid #DFBF98;
+    border-radius: 4px;
+}
+
+
+.inputbutton{
+  background-color: transparent;
+  width: 70px;
+  font-size: 13px;
+   margin-top: 20px;
+   border: 1px solid #464646;
+    border-radius: 4px;
+
+}
+
+
+.logintexttitle{
+  margin-top: 80px;
+    text-align: center;
+    color: #464646;
+    letter-spacing: 10px;
+    font-weight: normal;
+    font-family: 'Montserrat UltraLight';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: inherit;
+}
+
+
+/*=====hover*/
+
+
+.inputbutton:hover { 
+  cursor: pointer;
+   /* background-color: white;
+    color: black;
+      border-width: 0px;
+      border-radius: 5px;*/
+
+}
+
+.inputbuttontext{
+
+cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.inputbuttontext:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.inputbutton:hover .inputbuttontext {
+  padding-right: 25px;
+}
+
+
+.inputbutton:hover .inputbuttontext:after {
+  opacity: 1;
+  right: 0;
+  /*font-size: 4px;*/
+}
 

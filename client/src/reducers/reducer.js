@@ -3,7 +3,8 @@ import {
   TOOGLE,
   INVALID_CRED,
   LOGGED_IN,
-  LOGGED_OUT
+  LOGGED_OUT,
+  VALID_CRED
 
 } from '../actions/action';
 
@@ -39,6 +40,10 @@ export default (state = initialState, action) => {
 		case LOGGED_OUT:
 		return Object.assign({}, state, {
 		    loggenIn:false
+		})
+		case VALID_CRED:
+		return Object.assign({}, state, {
+		    InvalidCred:false
 		})  
 
 

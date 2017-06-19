@@ -17,6 +17,10 @@ export const INVALID_CRED = 'INVALID_CRED';
 export const InvalidCred = () =>({
   type: INVALID_CRED,
 })
+export const VALID_CRED = 'VALID_CRED';
+export const validCred = () =>({
+  type: VALID_CRED,
+})
 
 export const LOGGED_IN = 'LOGGED_IN';
 export const LoggedIn = () =>({
@@ -42,6 +46,7 @@ export const loginUser = (email, password) => dispatch => {
   })
   .then(json => {
   	console.log('returned login obj', json) 
+     dispatch(validCred())
     dispatch(LoggedIn())
   	hashHistory.push('/LoginHome');
   })
