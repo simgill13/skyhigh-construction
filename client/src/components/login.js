@@ -8,8 +8,9 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import Home from './home';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
-
-
+import {loginUser} from '../actions/action';
+import {hashHistory} from 'react-router';
+import * as Cookies from 'js-cookie';
 
 
 
@@ -29,10 +30,17 @@ class Login extends React.Component {
 	 	console.log('hi')
 	 	console.log(email)
 	 	console.log(password)
+
+    // this is where the asyn action will be called 
+    this.props.dispatch(loginUser(email,password));
+    const cookie = Cookies.get('COOKIE_TESTTTT');
+    console.log(cookie)
+   
+
  	}
 
     render() {
-    	console.log(this.state.email)
+    	
        
       return (
         <div className="LoginComponent">
@@ -47,6 +55,8 @@ class Login extends React.Component {
                       const password = event.target.password.value;
                       this.sim(email,password)              
                   }} className="search-form" >
+                    <p> email is demo@gmail.com</p>
+                    <p> password is demo </p>
                     <input name="email" type="text" placeholder=" email" required></input><br/>
                     <input name="password" type="text" placeholder=" password" required></input><br/>
                     <button type="submit" >enter</button>

@@ -4,13 +4,19 @@ const bodyParser = require('body-parser');
 const DATABASE_URL = process.env.DATABASE_URL ||
                        global.DATABASE_URL || 'mongodb://sim:test@ds145790.mlab.com:45790/breaze';
 const router = express.Router();
+const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 const {Usersky} = require('./models');
 const passport = require("passport"); //added this
+const proxy = require('http-proxy-middleware');
+const {BasicStrategy} = require('passport-http');
 const BearerStrategy = require("passport-http-bearer").Strategy; // a
 const app = express();
 app.use(bodyParser.json())
+var setCookie = require('set-cookie');
+
 // API endpoints go here!
+
 
 
 
@@ -24,22 +30,23 @@ app.use(bodyParser.json())
 
  // PASSPORT STRATEGY =========================
 
+// this srategy is more for google login than it is regular pass check.
 
-passport.use(new BearerStrategy(
-  function(token, done) {
-    console.log(token);
+// passport.use(new BearerStrategy(
+//   function(token, done) {
+//     console.log(token);
 
-    User.findOne({ accessToken: token }, function (err, user) {
-      console.log('token is here',token)
-      console.log('user is here', User)
-      console.log(user)
-      if (err) { return done(err); }
-      if (!user) { return done(null, false); }
-      return done(null, user, { scope: 'all' });
-    });
+//     User.findOne({ accessToken: token }, function (err, user) {
+//       console.log('token is here',token)
+//       console.log('user is here', User)
+//       console.log(user)
+//       if (err) { return done(err); }
+//       if (!user) { return done(null, false); }
+//       return done(null, user, { scope: 'all' });
+//     });
 
-  }
-));
+//   }
+// ));
 
 
 
@@ -47,30 +54,131 @@ passport.use(new BearerStrategy(
 // ================================== -- USER COLLECTION--  STARTS  ===========================
 
 
-app.get('/api/user',passport.authenticate('bearer', { session: false }), (req, res) => {
-  User
+
+
+
+
+app.get('/api/usersky', (req, res) => {
+    console.log('you have hit the get call')
+  Usersky
   .find()
   .exec()
-  .then(data => res.json({
-      users:data.map(user=> user.apiRepr())
-  }))
+  .then(data => {
+    res.json(data)
+  })
   .catch(console.error)
 }
 );
 
 
-// this end point is created because i can use it to check if a user exists 
-// in the data base, when google auth is clicked 
-// -- if the user is already in the database, then this will be used
-//-- if not a new user will be created.
-app.get('/api/user/:googleId', (req, res) => {
-  User
-  .findOne({googleId: req.params.googleId})
+
+// this end point will handel user creation 
+app.post('/api/usersky', (req, res) => {
+    let email = req.body.email
+    let password= req.body.password
+  
+
+    Usersky
+    .find({email})
+    .count()
+    .exec()
+    .then(count => {
+        if(count >= 1){
+            return res.status(401).json({message:"email is already taken"})
+        }
+        return  Usersky.hashPassword(password);      
+    })
+    .then(hash => {
+       return Usersky
+      .create({
+       email: req.body.email,
+       password:hash
+      })
+    })
+    .then(newUser => {
+      res.status(201).json(newUser.apiRepr())
+    })
+  
+});
+
+
+
+
+
+
+
+
+
+// use this to validate the login
+
+const basicStrategy = new BasicStrategy(
+  (email, password, callback) => {
+
+    let user;
+
+
+    Usersky
+      .findOne({email})
+      .exec()
+      .then(_user => {
+        user = _user;
+        if (!user) {
+          console.log("second")
+          return callback({message:"Incorrect Email"}, false, {message:"Incorrect Email"});
+        }
+        console.log('THIRDDD')
+        user.validatePassword(password)
+      
+      .then(isValid => {
+        if (!isValid) {
+          console.log("forth")
+          return callback(null, false, "Incorrect password");
+        }
+        else {
+          console.log('fifth')
+          return callback(null, user);
+        }
+      });
+    })
+});
+
+
+
+passport.use(basicStrategy);
+app.use(passport.initialize());
+
+app.get('/api/usersky/validate/:useremail', passport.authenticate('basic', {session: false}, (err,user,info) => {
+  console.log("INFO", info)
+  console.log("USER",user)
+  console.log("ERROR", err)
+  // return res.send(200)
+}), (req, res) => {
+    userEmail = req.params.useremail.toLowerCase();
+
+  Usersky
+  .find({email:userEmail})
   .exec()
-  .then(data => res.json(data))
+  .then(user => {
+    console.log("=====HiFromServertwoo=====", user)
+
+    // res.cookie('COOKIE_TESTTTT', user[0].email);
+    res.json(user[0].apiRepr())
+  
+  })
   .catch(console.error)
-}
-);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
