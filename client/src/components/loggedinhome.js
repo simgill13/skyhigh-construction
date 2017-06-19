@@ -39,7 +39,7 @@ class LoginHome extends React.Component {
        
       return (
         <div className="LoginHome">
-          <h1> Welcome, You are now logged In  </h1>
+          <h1> Welcome, You are now logged In -- under construction  </h1>
           <button onClick={this.logout}> Sign Out </button>  	
         </div>
 
