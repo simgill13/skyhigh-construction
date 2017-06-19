@@ -24,6 +24,11 @@ class Login extends React.Component {
     }
  
  	componentDidMount() {
+    if(this.props.loggenIn === true){
+      hashHistory.push('/LoginHome');
+    }
+
+
    	}
 
  	sim(email,password){
@@ -40,7 +45,12 @@ class Login extends React.Component {
  	}
 
     render() {
+      console.log("LOOK HERE",this.props.InvalidCred)
     	
+      let errMsg;
+      if(this.props.InvalidCred ===true){
+        errMsg="Please check your Credentials"
+      }
        
       return (
         <div className="LoginComponent">
@@ -48,6 +58,7 @@ class Login extends React.Component {
           	<div className="LoginText">
           		<h1> Login ---under construction </h1>
           	</div>
+
           	<div className="Logininput">
           	      <form onSubmit={(event) => {
                       event.preventDefault();
@@ -61,6 +72,7 @@ class Login extends React.Component {
                     <input name="password" type="text" placeholder=" password" required></input><br/>
                     <button type="submit" >enter</button>
                   </form>
+                  {errMsg}
           	</div>
           </div>
         </div>
@@ -74,8 +86,18 @@ class Login extends React.Component {
 
 
 
+const mapStateToProps = (state) => ({
+  InvalidCred:state.InvalidCred,
+  loggenIn:state.loggenIn
+});
+
+
+
+export default connect(mapStateToProps)(Login);
 
 
 
 
-export default connect()(Login);
+
+
+

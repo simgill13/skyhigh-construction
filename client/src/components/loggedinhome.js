@@ -8,7 +8,7 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import Home from './home';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
-import {loginUser} from '../actions/action';
+import {loginUser,LoggedOut} from '../actions/action';
 import {hashHistory} from 'react-router';
 
 
@@ -20,12 +20,18 @@ class LoginHome extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {	
-    	};    
+    	}; 
+       this.logout = this.logout.bind(this)   
     }
  
  	componentDidMount() {
    	}
 
+
+  logout(){
+    this.props.dispatch(LoggedOut());
+    hashHistory.push('/');
+  }
 
 
     render() {
@@ -33,7 +39,8 @@ class LoginHome extends React.Component {
        
       return (
         <div className="LoginHome">
-          <h1> Welcome, You are now logged In  </h1>  	
+          <h1> Welcome, You are now logged In  </h1>
+          <button onClick={this.logout}> Sign Out </button>  	
         </div>
 
         )
@@ -45,8 +52,11 @@ class LoginHome extends React.Component {
 
 
 
+const mapStateToProps = (state) => ({
+  InvalidCred:state.InvalidCred,
+  loggenIn:state.loggenIn
+});
 
 
 
-
-export default connect()(LoginHome);
+export default connect(mapStateToProps)(LoginHome);

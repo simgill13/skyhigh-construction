@@ -13,9 +13,20 @@ export const hideLogin = () =>({
   type: HIDE_LOGIN,
 })
 
+export const INVALID_CRED = 'INVALID_CRED';
+export const InvalidCred = () =>({
+  type: INVALID_CRED,
+})
 
+export const LOGGED_IN = 'LOGGED_IN';
+export const LoggedIn = () =>({
+  type: LOGGED_IN,
+})
 
-
+export const LOGGED_OUT = 'LOGGED_OUT';
+export const LoggedOut = () =>({
+  type: LOGGED_OUT,
+})
 
 
 export const loginUser = (email, password) => dispatch => {
@@ -27,21 +38,19 @@ export const loginUser = (email, password) => dispatch => {
     // credentials: 'same-origin',
   })
   .then(response => {
-    if(!response){
-      alert('invalid credentials')
-    }
-    return response.json();
-    
+   return response.json() 
   })
   .then(json => {
   	console.log('returned login obj', json) 
+    dispatch(LoggedIn())
   	hashHistory.push('/LoginHome');
-
-  	
-
   })
   .catch(err => {
-    
+    if(err){
+      console.log(" invalid credentials")
+      dispatch(InvalidCred())
+    }
+
     console.log(err);
    
   })

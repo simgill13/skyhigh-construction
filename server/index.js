@@ -124,7 +124,7 @@ const basicStrategy = new BasicStrategy(
         user = _user;
         if (!user) {
           console.log("second")
-          return callback({message:"Incorrect Email"}, false, {message:"Incorrect Email"});
+          return callback(null, false, "Incorrect Email");
         }
         console.log('THIRDDD')
         user.validatePassword(password)
@@ -144,38 +144,28 @@ const basicStrategy = new BasicStrategy(
 
 
 
+
+
 passport.use(basicStrategy);
 app.use(passport.initialize());
 
-app.get('/api/usersky/validate/:useremail', passport.authenticate('basic', {session: false}, (err,user,info) => {
-  console.log("INFO", info)
-  console.log("USER",user)
-  console.log("ERROR", err)
-  // return res.send(200)
-}), (req, res) => {
-    userEmail = req.params.useremail.toLowerCase();
+app.get('/api/usersky/validate/:useremail', passport.authenticate('basic', {session: false}), (req, res) => {
+  useremail = req.params.useremail.toLowerCase();
 
   Usersky
-  .find({email:userEmail})
-  .exec()
-  .then(user => {
-    console.log("=====HiFromServertwoo=====", user)
-
-    // res.cookie('COOKIE_TESTTTT', user[0].email);
-    res.json(user[0].apiRepr())
-  
-  })
-  .catch(console.error)
-});
-
-
-
-
-
-
-
-
-
+    .findOne({ email: useremail })
+    .then(user => {
+      if (!user) {
+        return res.status(404).json({message: 'Invalid Credentials'});
+      } else {
+       
+        return res.status(200).json(user.apiRepr());
+      }
+    })
+    .catch(err => {
+      res.status(500).json({message: 'Internal server error'})
+    });
+})
 
 
 
