@@ -17,6 +17,7 @@ import Sliderone from './sliderone';
 import ContactUs from './contactus';
 import Last from './last';
 import $ from 'jquery';
+import {hashHistory} from 'react-router';
 
 class Home extends React.Component {
    
@@ -28,7 +29,14 @@ class Home extends React.Component {
  	 
 
     componentDidMount() {
-        $(function() {
+     
+        
+        if(this.props.loggenIn === true){
+      hashHistory.push('/LoginHome');
+    }
+    else{
+        hashHistory.push('/');
+    }
 
         $('a[href*="#"]')
         .not('[href="#"]')
@@ -54,19 +62,17 @@ class Home extends React.Component {
            $target.attr('tabindex','-1');
            $target.focus();
          };
-       });
-     }
-   }
- });
-
-
+            });
+          }
+        }
         });
-  
     }
 
 
 
     render() {
+
+
     	
         return (
             <div>
@@ -105,7 +111,8 @@ class Home extends React.Component {
    
 const mapStateToProps = (state) => ({
 	toogle:state.toogle,
-	image:state.image
+	image:state.image,
+    loggenIn:state.loggenIn,
 
 });
 

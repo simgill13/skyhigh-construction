@@ -48,7 +48,7 @@ export const loginUser = (email, password) => dispatch => {
   	console.log('returned login obj', json) 
      dispatch(validCred())
     dispatch(LoggedIn())
-  	hashHistory.push('/LoginHome');
+  	hashHistory.push('/');
   })
   .catch(err => {
     if(err){

@@ -24,9 +24,7 @@ class Login extends React.Component {
     }
  
  	componentDidMount() {
-    if(this.props.loggenIn === true){
-      hashHistory.push('/LoginHome');
-    }
+    
 
 
    	}
@@ -38,14 +36,18 @@ class Login extends React.Component {
 
     // this is where the asyn action will be called 
     this.props.dispatch(loginUser(email,password));
-    const cookie = Cookies.get('accessToken');
-    console.log(cookie)
+    // const cookie = Cookies.get('accessToken');
+    // console.log(cookie)
    
 
  	}
 
     render() {
       console.log("LOOK HERE",this.props.InvalidCred)
+
+      if(this.props.loggenIn===true){
+        hashHistory.push('/');
+      }
     	
       let errMsg;
       if(this.props.InvalidCred ===true){
