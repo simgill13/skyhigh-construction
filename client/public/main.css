@@ -929,6 +929,7 @@ margin: auto;
 
 
 .logintext{
+  font-size: 10px;
   padding: 0px;
   margin: 0px;
 }
@@ -1008,3 +1009,81 @@ cursor: pointer;
   /*font-size: 4px;*/
 }
 
+.loggedInnavBar{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loggedInrightside{
+   box-shadow: 10px 10px 5px #dedede;
+  display: inline-block;
+  width: 100%;
+  /*height:70px;*/
+  background-color:white;
+}
+.loggedInnavList{
+margin-top: 15px;
+  display: inline-block;
+}
+.dashboardtext{
+      margin-right: 17px;
+  display: inline-block;
+}
+
+.logoutbutton{
+   background-color: transparent;
+    border: none;
+        float: right;
+    margin-top: 33px;
+}
+
+.graphmain{
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.graphtop{
+   width: 100%;
+  height: 100%;
+}
+
+.graphleft{
+  width: 50%;
+  display: inline-block;
+}
+
+.graphright{
+     /*border: solid;*/
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.welcometext{
+
+    
+    color: #464646;
+    letter-spacing: 10px;
+    font-weight: normal;
+    font-family: 'Montserrat UltraLight';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: inherit;
+
+}
+
+
+.Pmtext{
+  font-weight: 100;
+}
+.gfacebookicon{
+  margin-right: 4px;
+}
+.gtwittericon{
+  margin-right: 4px;
+}
