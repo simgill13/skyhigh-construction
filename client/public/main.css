@@ -1039,6 +1039,7 @@ margin-top: 15px;
     margin-top: 58px;
 }
 
+
 .graphmain{
   margin-top: 70px;
   width: 100%;
@@ -1108,6 +1109,7 @@ color: white;
 
 
 .dashboardtextword{
+  cursor:pointer;
    color: white;
     letter-spacing: 10px;
     font-weight: normal;
@@ -1115,13 +1117,17 @@ color: white;
     text-transform: uppercase;
     font-size: 15px;
     line-height: inherit;
+ 
+
+
+}
+.dbtwunderline{
     border-bottom: 1px solid #DFBF98;
-
-
 }
 
 
 .projectionstext{
+  cursor:pointer;
    color: white;
     letter-spacing: 10px;
     font-weight: normal;
@@ -1130,7 +1136,9 @@ color: white;
     font-size: 15px;
     line-height: inherit;
 }
-
+.projectiontextunderline{
+   border-bottom: none;
+}
 
 
 .UserHomePics{

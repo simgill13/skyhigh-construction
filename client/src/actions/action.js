@@ -32,7 +32,14 @@ export const LoggedOut = () =>({
   type: LOGGED_OUT,
 })
 
-
+export const CLICKED_PROJECTIONS = 'CLICKED_PROJECTIONS';
+export const clickedProjections = () =>({
+  type: CLICKED_PROJECTIONS,
+})
+export const CLICKED_DASH = 'CLICKED_DASH';
+export const clickedDash = () =>({
+  type: CLICKED_DASH,
+})
 export const loginUser = (email, password) => dispatch => {
   const encodedLoginInfo = base64.encode(`${email.toLowerCase()}:${password}`)
   return fetch(`/api/usersky/validate/${email}`, {

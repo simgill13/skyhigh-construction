@@ -4,15 +4,20 @@ import {
   INVALID_CRED,
   LOGGED_IN,
   LOGGED_OUT,
-  VALID_CRED
+  VALID_CRED,
+  CLICKED_PROJECTIONS,
+  CLICKED_DASH
 
 } from '../actions/action';
 
 const initialState = {
+	test:"this is reduver test",
   toogle: true,
   image:'http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg',
   InvalidCred:false,
-  loggenIn:false
+  loggenIn:false,
+  dashboard:true,
+  hello:"true"
 };
 
 
@@ -46,8 +51,15 @@ export default (state = initialState, action) => {
 		    InvalidCred:false
 		})  
 
+		case CLICKED_PROJECTIONS:
+		return Object.assign({}, state, {
+		    dashboard:false
+		}) 
 
-
+		case CLICKED_DASH:
+		return Object.assign({}, state, {
+		    dashboard:true
+		})
 
 
 		default:

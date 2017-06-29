@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router';
-import {LoggedOut} from '../actions/action';
+import {LoggedOut,clickedProjections,clickedDash} from '../actions/action';
 
 
 
@@ -17,6 +17,9 @@ class LoggedInNav extends React.Component {
   constructor(props) {
     super(props);     
     this.logout = this.logout.bind(this); 
+    this.projections = this.projections.bind(this); 
+    this.dashbord = this.dashbord.bind(this); 
+
   }
    
  
@@ -25,6 +28,23 @@ class LoggedInNav extends React.Component {
       
   
    }
+
+   projections(){
+    console.log(this.props.dashbord)
+    console.log(this.props.test)
+    console.log(this.props.hello)
+
+     $(".dbtwunderline").css("border-bottom", "none");
+     $(".projectionstext").css("border-bottom", "1px solid #DFBF98");
+     this.props.dispatch(clickedProjections());
+   }
+
+   dashbord(){
+    $(".dbtwunderline").css("border-bottom", "1px solid #DFBF98");
+     $(".projectionstext").css("border-bottom", "none");
+     this.props.dispatch(clickedDash());
+   }
+
    logout(){
     this.props.dispatch(LoggedOut());
   }
@@ -35,12 +55,12 @@ class LoggedInNav extends React.Component {
         <div className="loggedInnavBar">
           <div className="loggedInrightside">
           <ul className="loggedInnavList" >
-            <li  className="dashboardtext dashboardtextword"> Dashboard  </li>
+            <li  onClick={this.dashbord} className="dashboardtext dashboardtextword dbtwunderline"> Dashboard  </li>
              <FontAwesome className='fa fa-viacoin dashboardtext logginInIcon' size='5x' aria-hidden='true'/>
-            <li className="dashboardtext projectionstext"> Projections </li>
+            <li onClick={this.projections} className="dashboardtext projectionstext "> Projections </li>
             
           </ul>
-          <button className="dashboardtext logoutbutton" onClick={this.logout}> Logout </button>
+          <button className="dashboardtext logoutbutton " onClick={this.logout}> Logout </button>
           </div>
         </div>
 
@@ -52,9 +72,18 @@ class LoggedInNav extends React.Component {
 }
 
 
+const mapStateToProps = (state) => ({
+
+  dashboard:state.dashboard,
+  test:state.test,
+  hello:state.hello
+
+});
+
+
+
+export default connect(mapStateToProps)(LoggedInNav);
 
 
 
 
-
-export default connect()(LoggedInNav);
