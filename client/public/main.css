@@ -1052,8 +1052,10 @@ margin-top: 15px;
 }
 
 .graphleft{
-  width: 50%;
-  display: inline-block;
+     border-right: solid;
+    border-color: #dfbf98;
+    width: 50%;
+    display: inline-block;
 }
 
 .graphright{

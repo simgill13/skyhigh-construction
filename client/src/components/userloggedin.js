@@ -8,6 +8,7 @@ import LoggedInNav from './loggeninnav';
 import UserGraphs from './usergraphs';
 import FontAwesome from 'react-fontawesome';
 import UserHomePics from './usershomepics';
+import Bargraph from './bargraph';
 
 
 
@@ -39,6 +40,11 @@ class UserLoggedIn extends React.Component {
         userhomepics =  <UserHomePics/>
       }
 
+      let bargraph;
+      if(this.props.dashboard === false){
+        bargraph = <Bargraph/>
+      }
+
 
         return (
             <div>
@@ -46,6 +52,7 @@ class UserLoggedIn extends React.Component {
                 <LoggedInNav/>
                 {usergraphs}
                 {userhomepics}
+                {bargraph}
                    
                     
           		</div>
