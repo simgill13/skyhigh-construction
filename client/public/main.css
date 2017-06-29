@@ -1135,7 +1135,7 @@ color: white;
 
 .UserHomePics{
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-color: #3B3B3B;
 }
 
@@ -1173,8 +1173,124 @@ color: white;
 
 
 
+.userbottompics{
+     width: 100%;
+   /* height: 450px;*/
+    /*border: solid;*/
+    margin-top: 40px;
+
+}
+
+
+.bottominner{
+
+  /* border: solid red;*/
+    height: 350px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.userleftpics{
+  vertical-align: top;
+  height: 340px;
+  width: 50%;
+  /*border: solid blue;*/
+  display: inline-block;
+
+}
+.userrightpics{
+  /*height: 340px;*/
+  width: 50%;
+  /*border: solid blue;*/
+  display: inline-block;
+
+}
+
+
+.uleftTopRow{
+  width: 100%;
+ /* border: solid green;*/
+  height: 170px;
+}
+.uleftbottompRow{
+  vertical-align: top;
+  width: 100%;
+/*  border: solid green;*/
+  height: 170px;
+}
+
+.topleftsleftdiv{
+  width: 50%;
+ /* border: solid yellow;*/
+  height: 170px;
+  display: inline-block;
+  background-image: url('http://res.cloudinary.com/sds-images/image/upload/v1498753733/homeinside_gtlqz8.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+}
+.topleftsrightdiv{
+  width: 50%;
+ /* border: solid yellow;*/
+  height: 170px;
+  display: inline-block;
+  background-image: url('http://res.cloudinary.com/sds-images/image/upload/v1498753734/homeinterior2_vwaktl.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+}
+
+.bottomrowleftdiv{
+  width: 50%;
+  /*border: solid yellow;*/
+  height: 170px;
+  display: inline-block;
+  background-image: url('http://res.cloudinary.com/sds-images/image/upload/v1498753733/homeinterior3_mban7j.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+}
+.bottomrowrightdiv{
+  width: 50%;
+  /*border: solid yellow;*/
+  height: 170px;
+  display: inline-block;
+  background-image: url('http://res.cloudinary.com/sds-images/image/upload/v1498753737/homeinterior4_pccokv.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+
+}
 
 
 
+.liveupdatestext{
+    margin-left: 50%;
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    margin-top: 0%;
+}
+
+.hello{
+
+    
+    
+   margin-top: 60px;
+    z-index: 100;
+   margin-left: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: "Droid Serif";
+    font-style: italic;
+    letter-spacing: 3px;
+    text-align: center;
+}
 
 
