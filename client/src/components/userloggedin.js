@@ -7,6 +7,7 @@ import {hashHistory} from 'react-router';
 import LoggedInNav from './loggeninnav';
 import UserGraphs from './usergraphs';
 import FontAwesome from 'react-fontawesome';
+import UserHomePics from './usershomepics';
 
 
 
@@ -33,7 +34,7 @@ class UserLoggedIn extends React.Component {
                 <div className="mainpic">
                 <LoggedInNav/>
                 <UserGraphs/>
-                  
+                <UserHomePics/>
                    
                     
           		</div>

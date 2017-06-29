@@ -63,7 +63,7 @@ class UserGraphs extends React.Component {
             <FontAwesome className='fa fa-facebook-square gfacebookicon ggiconcolor' size='1x' aria-hidden='true'/>
             <FontAwesome className='fa fa-twitter-square gtwittericon ggiconcolor ' size='1x' aria-hidden='true'/>
             <FontAwesome className='fa fa-instagram finstagramicon ggiconcolor' size='1x' aria-hidden='true'/>
-            <h3 className="Pmtext"> Your Budget </h3>
+            <h3 className="Pmtext"> Remaining Budget </h3>
             <p> <span> $ </span> 1,350,000 </p>
            
           </div>
