@@ -35,9 +35,9 @@ class LoggedInNav extends React.Component {
         <div className="loggedInnavBar">
           <div className="loggedInrightside">
           <ul className="loggedInnavList" >
-            <li  className="dashboardtext"> Dashboard  </li>
-             <FontAwesome className='fa fa-viacoin dashboardtext ' size='3x' aria-hidden='true'/>
-            <li className="dashboardtext"> Projections </li>
+            <li  className="dashboardtext dashboardtextword"> Dashboard  </li>
+             <FontAwesome className='fa fa-viacoin dashboardtext logginInIcon' size='5x' aria-hidden='true'/>
+            <li className="dashboardtext projectionstext"> Projections </li>
             
           </ul>
           <button className="dashboardtext logoutbutton" onClick={this.logout}> Logout </button>

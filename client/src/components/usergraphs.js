@@ -17,12 +17,12 @@ class UserGraphs extends React.Component {
     this.state = {
       data:{
         labels: [
-          'Materials Stock',
-          'Employies Working',
-          'Setbacks'
+          'Work Complete (%)',
+          'Materials Used(%)',
+          'Setbacks(%)'
         ],
       datasets: [{
-        data: [300, 50, 100],
+        data: [80, 92, 40],
         backgroundColor: [
         '#d6ad7a',
         '#7ad6ad',
@@ -57,12 +57,12 @@ class UserGraphs extends React.Component {
           </div>
 
            <div className="graphright">
-            <h1 className="welcometext"> Welcome Demo </h1>
+            <h1 className="welcometext"> Hi, Demo </h1>
             <h3 className="Pmtext"> Your Project Manager </h3>
-            <p> Sim Gill</p>
-            <FontAwesome className='fa fa-facebook-square gfacebookicon ' size='1x' aria-hidden='true'/>
-            <FontAwesome className='fa fa-twitter-square gtwittericon ' size='1x' aria-hidden='true'/>
-            <FontAwesome className='fa fa-instagram finstagramicon ' size='1x' aria-hidden='true'/>
+            <p className="ugname"> Sim Gill</p>
+            <FontAwesome className='fa fa-facebook-square gfacebookicon ggiconcolor' size='1x' aria-hidden='true'/>
+            <FontAwesome className='fa fa-twitter-square gtwittericon ggiconcolor ' size='1x' aria-hidden='true'/>
+            <FontAwesome className='fa fa-instagram finstagramicon ggiconcolor' size='1x' aria-hidden='true'/>
             <h3 className="Pmtext"> Your Budget </h3>
             <p> <span> $ </span> 1,350,000 </p>
            

@@ -1020,7 +1020,7 @@ cursor: pointer;
   display: inline-block;
   width: 100%;
   /*height:70px;*/
-  background-color:white;
+  background-color:#3B3B3B;
 }
 .loggedInnavList{
 margin-top: 15px;
@@ -1032,10 +1032,11 @@ margin-top: 15px;
 }
 
 .logoutbutton{
+  color: white;
    background-color: transparent;
     border: none;
         float: right;
-    margin-top: 33px;
+    margin-top: 58px;
 }
 
 .graphmain{
@@ -1067,11 +1068,11 @@ margin-top: 15px;
 .welcometext{
 
     
-    color: #464646;
-    letter-spacing: 10px;
+    color: #DFBF98;
+   /* letter-spacing: 10px;*/
     font-weight: normal;
-    font-family: 'Montserrat UltraLight';
-    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    /*text-transform: uppercase;*/
     font-size: 30px;
     line-height: inherit;
 
@@ -1080,10 +1081,56 @@ margin-top: 15px;
 
 .Pmtext{
   font-weight: 100;
+   
 }
 .gfacebookicon{
   margin-right: 4px;
+  
 }
 .gtwittericon{
   margin-right: 4px;
+
 }
+.ggiconcolor{
+  color: #DFBF98;
+}
+
+
+
+
+.logginInIcon{
+color: white;
+}
+.ugname{
+  font-size: 20px;
+}
+
+
+
+.dashboardtextword{
+   color: white;
+    letter-spacing: 10px;
+    font-weight: normal;
+    font-family: 'Montserrat UltraLight';
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: inherit;
+    border-bottom: 1px solid #DFBF98;
+
+
+}
+
+
+.projectionstext{
+   color: white;
+    letter-spacing: 10px;
+    font-weight: normal;
+    font-family: 'Montserrat UltraLight';
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: inherit;
+}
+
+
+
+
