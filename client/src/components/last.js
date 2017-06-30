@@ -25,7 +25,7 @@ class Last extends React.Component {
     render() {
        
       return (
-          <div className="lastcomponent">
+          <div id="contactus" className="lastcomponent">
             <div className="lasttopwriting"> 
                 <h1 className="lastcomtext"> LET'S HEAR FROM YOU </h1>
             </div>

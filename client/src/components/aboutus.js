@@ -46,7 +46,7 @@ class AboutUs extends React.Component {
     render() {
        
       return (
-          <div className="AboutUsComponent">
+          <div id="aboutus" className="AboutUsComponent">
             <h3 className="AboutusText"><span className="blackslash"> /</span>About Us </h3>
             <div className="row1">
               <div className="box1 color">

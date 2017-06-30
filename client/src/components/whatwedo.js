@@ -63,7 +63,7 @@ class WhatWeDo extends React.Component {
        
       return (
           
-          <div className="WhatWeDoComponent">
+          <div id="whatwedosection" className="WhatWeDoComponent">
             <div className="wwdMainContainerleft">
               <div className="innerleft">
                 <div className="innermostleft innermostleft1 ">

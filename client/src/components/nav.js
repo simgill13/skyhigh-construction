@@ -42,9 +42,9 @@ class Nav extends React.Component {
         <div className="navBar">
            <FontAwesome className='fa fa-viacoin navIcon' size='3x' aria-hidden='true'/><h2 className="navText"> SkyHigh </h2>
           <ul className="navList" >
-            <li className="navElements"> <Link to={'/Login'}>Log In</Link> </li>
-            <li className="navElements"> Contact Us </li>
-            <li className="navElements navServices"> Services </li>
+            <li className="navElements navloginbutton"> <Link className="navloginbuttonlink" to={'/Login'}>Log In</Link> </li>
+            <a href="#contactus"><li className="navElements"> Contact Us </li></a>
+            <a href="#aboutus"><li className="navElements navServices"> Services </li></a>
           </ul>
         </div>
 
