@@ -1330,6 +1330,7 @@ a:hover{
     }
     .welcomemesgsize{
      font-size: 36px;
+     margin-left: 22px;
     }
     .navText{
      font-size: 18px;
@@ -1341,9 +1342,10 @@ a:hover{
     .navList{
          float: none;
     display: inline-block;
-    margin-left: 59px;
+    margin-left: 111px;
     padding: none;
     padding: 0;
+    
     }
 
     .navServices{
@@ -1352,9 +1354,13 @@ a:hover{
     .contactservices{
       display: none;
     }
+
+
     .navBar{
-      display: none;
+ 
     }
+
+
     .Divider{
       display: none;
     }
@@ -1403,6 +1409,8 @@ a:hover{
 
     .actbuttons{
           font-size: 10px;
+              margin-top: 12px;
+}
     }
 
 .ourteamcomponent{
@@ -1425,9 +1433,9 @@ a:hover{
   display: none;
 }
 
-.clockicontext{
+/*.clockicontext{
       color: #5a5a5a;
-}
+}*/
 .carousel-inner > .item > img{
       height: 270px;
 
@@ -1461,6 +1469,10 @@ a:hover{
 }
 .dontshowbuttons{
   display: none;
+}
+
+.locatedat{
+      color: #5a5a5a;
 }
 }
 

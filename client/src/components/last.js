@@ -50,7 +50,7 @@ class Last extends React.Component {
                   <FontAwesome className='fa fa-building-o clockicon' size='4x' aria-hidden='true'/>
                 </div>
                 <div className="clockicontext">
-                  <h1 >Located At </h1>
+                  <h1 className="locatedat">Located At </h1>
                   <p className="clockicontexttwo">2100 Main St </p>
                   <p className="clockicontexttwo">Los Angeles  </p>
                   <p className="clockicontexttwo">CA,91020 </p>
