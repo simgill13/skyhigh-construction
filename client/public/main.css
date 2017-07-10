@@ -1339,10 +1339,11 @@ a:hover{
     margin-left: 27%;
     }
     .navList{
-      
-      float: none;
-      display: inline-block;
-          margin-left: 59px;
+         float: none;
+    display: inline-block;
+    margin-left: 59px;
+    padding: none;
+    padding: 0;
     }
 
     .navServices{
@@ -1351,7 +1352,12 @@ a:hover{
     .contactservices{
       display: none;
     }
-
+    .navBar{
+      display: none;
+    }
+    .Divider{
+      display: none;
+    }
     .DividerBar{
       display: none;
     }
@@ -1396,7 +1402,7 @@ a:hover{
 
 
     .actbuttons{
-          font-size: 6px;
+          font-size: 10px;
     }
 
 .ourteamcomponent{
@@ -1405,6 +1411,7 @@ a:hover{
 
   .member{
     width: 100%;
+    border: none;
   }
 .rightmemberdiv{
        margin-left: 0px; 
