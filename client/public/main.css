@@ -1330,7 +1330,6 @@ a:hover{
     }
     .welcomemesgsize{
      font-size: 36px;
-     margin-left: 22px;
     }
     .navText{
      font-size: 18px;
@@ -1340,12 +1339,10 @@ a:hover{
     margin-left: 27%;
     }
     .navList{
-         float: none;
-    display: inline-block;
-    margin-left: 111px;
-    padding: none;
-    padding: 0;
-    
+      
+      float: none;
+      display: inline-block;
+          margin-left: 59px;
     }
 
     .navServices{
@@ -1355,15 +1352,6 @@ a:hover{
       display: none;
     }
 
-
-    .navBar{
- 
-    }
-
-
-    .Divider{
-      display: none;
-    }
     .DividerBar{
       display: none;
     }
@@ -1408,9 +1396,7 @@ a:hover{
 
 
     .actbuttons{
-          font-size: 10px;
-              margin-top: 12px;
-}
+          font-size: 6px;
     }
 
 .ourteamcomponent{
@@ -1419,7 +1405,6 @@ a:hover{
 
   .member{
     width: 100%;
-    border: none;
   }
 .rightmemberdiv{
        margin-left: 0px; 
@@ -1433,9 +1418,9 @@ a:hover{
   display: none;
 }
 
-/*.clockicontext{
+.clockicontext{
       color: #5a5a5a;
-}*/
+}
 .carousel-inner > .item > img{
       height: 270px;
 
@@ -1470,13 +1455,7 @@ a:hover{
 .dontshowbuttons{
   display: none;
 }
-
-.locatedat{
-      color: #5a5a5a;
 }
-}
-
-
 
 
 
