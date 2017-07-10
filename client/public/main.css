@@ -1330,19 +1330,21 @@ a:hover{
     }
     .welcomemesgsize{
      font-size: 36px;
+     margin-left: 7%;
     }
     .navText{
      font-size: 18px;
     }
 
     .WelcomeBtn{
-    margin-left: 27%;
+    margin-left: 31%;
     }
     .navList{
       
       float: none;
       display: inline-block;
           margin-left: 59px;
+           padding: 0;
     }
 
     .navServices{
@@ -1362,7 +1364,7 @@ a:hover{
     .whatwedoText{
           display: none;
     }
-
+    
 
     .wwdMainContainerright{
       display: none;
@@ -1396,15 +1398,18 @@ a:hover{
 
 
     .actbuttons{
-          font-size: 6px;
+          font-size: 10px;
     }
 
 .ourteamcomponent{
-
+  margin-top: 183px;
 }
 
   .member{
     width: 100%;
+    border: none;
+        padding: 31px;
+            margin-bottom: 57px;
   }
 .rightmemberdiv{
        margin-left: 0px; 
@@ -1432,7 +1437,9 @@ a:hover{
        bottom: 0px;
 }
 
-
+.Divider{
+  display: none;
+}
 .carousel .item{
       height: 269px;
 }
@@ -1450,10 +1457,14 @@ a:hover{
   height: 150px;
 }
 .buttonsDiv{
+      margin-top: 15px;
 
 }
 .dontshowbuttons{
   display: none;
+}
+.lastcomtext{
+  margin-left: 10px;
 }
 }
 

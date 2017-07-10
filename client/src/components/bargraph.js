@@ -5,7 +5,7 @@ const initialState = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
-      label: 'My First dataset',
+      label: 'Work',
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -77,7 +77,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <h2>Random Animated Line Example</h2>
+        <h2>Projections</h2>
     <Graph />
       </div>
     );
