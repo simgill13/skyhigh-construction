@@ -16,21 +16,21 @@ class WelcomeBtn extends React.Component {
  
  componentDidMount() {
 
-      $(function(){
+    //   $(function(){
 
-      $(window).scroll(function() {
+    //   $(window).scroll(function() {
 
-    if ($(this).scrollTop()>0)
-     {
-        $('.WelcomeBtnComponent').fadeOut();
-     }
-    else
-     {
-      $('.WelcomeBtnComponent').fadeIn();
-     }
-    }); 
+    // if ($(this).scrollTop()>0)
+    //  {
+    //     $('.WelcomeBtnComponent').fadeOut();
+    //  }
+    // else
+    //  {
+    //   $('.WelcomeBtnComponent').fadeIn();
+    //  }
+    // }); 
          
-    });
+    // });
   
    }
 

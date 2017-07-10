@@ -1319,3 +1319,146 @@ color: white;
 a:hover{
   text-decoration: none;
 }
+
+
+
+@media only screen and (max-width: 414px) {
+
+    .WelcomeMsg{
+      display: none;
+
+    }
+    .welcomemesgsize{
+      display: none;
+    }
+    .navText{
+      display: none;
+    }
+
+    .WelcomeBtn{
+    margin-left: 31%;
+    }
+
+    .navServices{
+      display: none;
+    }
+    .contactservices{
+      display: none;
+    }
+
+    .DividerBar{
+      display: none;
+    }
+    .whatwedo{
+      width: 100%;
+
+    }
+    .whatwedoText{
+          display: none;
+    }
+
+
+    .wwdMainContainerright{
+      display: none;
+    }
+
+
+    .wwdMainContainerleft{
+      width: 100%;
+    }
+
+
+    .innermostleft{
+      display: block;
+      width: 100%;
+    }
+    .innermostright{
+      display: block;
+          width: 100%;
+    }
+    .wwdicon{
+      margin-left: 0px;
+    }
+    .wwdbottomparatext{
+      margin-left: 39%;
+    }
+
+
+    .Pror{
+      margin-top: 70px;
+    }
+
+
+    .actbuttons{
+          font-size: 6px;
+    }
+
+.ourteamcomponent{
+
+}
+
+  .member{
+    width: 100%;
+  }
+.rightmemberdiv{
+       margin-left: 0px; 
+}
+.bottomlastleftcomponentdiv{
+  display: block;
+      width: 100%;
+}
+
+.WhatWeDoComponent{
+  display: none;
+}
+
+.clockicontext{
+      color: #5a5a5a;
+}
+.carousel-inner > .item > img{
+      height: 270px;
+
+}
+.carousel{
+     height: 270px;
+}
+.carousel-indicators{
+       bottom: 0px;
+}
+
+
+.carousel .item{
+      height: 269px;
+}
+.carousel-control.left{
+      height: 270px;
+}
+.carousel-control.right{
+  height: 270px;
+}
+.backiconse{
+      margin-top: 130px;
+}
+
+.Sliderone{
+  height: 150px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
