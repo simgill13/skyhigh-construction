@@ -29,8 +29,8 @@ class Pror extends React.Component {
             <div className="buttonsDiv">
               <button className="actbuttons"> Project 1 </button>
               <button className="actbuttons"> Project 2 </button>
-              <button className="actbuttons"> Project 3 </button>
-              <button className="actbuttons"> Project 4 </button>
+              <button className="actbuttons dontshowbuttons"> Project 3 </button>
+              <button className="actbuttons dontshowbuttons"> Project 4 </button>
             </div>
           
             

@@ -1329,14 +1329,20 @@ a:hover{
 
     }
     .welcomemesgsize{
-      display: none;
+     font-size: 36px;
     }
     .navText{
-      display: none;
+     font-size: 18px;
     }
 
     .WelcomeBtn{
     margin-left: 31%;
+    }
+    .navList{
+      
+      float: none;
+      display: inline-block;
+          margin-left: 59px;
     }
 
     .navServices{
@@ -1444,6 +1450,9 @@ a:hover{
   height: 150px;
 }
 .buttonsDiv{
+
+}
+.dontshowbuttons{
   display: none;
 }
 }
