@@ -521,6 +521,7 @@ cursor: pointer;
     box-shadow: 11px 22px 55px #888888;
 }
 .themainestmain{
+      margin-bottom: 104px;
   height: 100%;
   width: 100%;
 /* background-color: #3B3B3B;*/
@@ -531,6 +532,8 @@ cursor: pointer;
     background: white;
     padding: 10px;
 }
+
+
 /* divider has two divs inside of it -- dividerbar and whatwedo*/
 .Divider{
  width: 100%;
@@ -742,7 +745,7 @@ line-height: 38px;
 
 .Pror{
       margin-top: 47px;
-          margin-bottom: 95px;
+          margin-bottom: 47px;
   width: 100%;
  height: 190px;
  background-color: #3B3B3B;
@@ -805,9 +808,11 @@ line-height: 38px;
 
 
 .ourteamcomponent{
+
      /* text-align: center; */
     /* max-width: 1035px; */
     max-width: 1035px;
+
     margin: auto;
     background: white;
     /* padding: 10px; */

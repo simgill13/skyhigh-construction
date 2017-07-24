@@ -22,6 +22,7 @@ class Pror extends React.Component {
     render() {
        
       return (
+        <div className="theprorcomponent">
           <div className="Pror" id="explore">
             <div className="projectTextline">
                 <h1 className="projectsText"> <span className="blackslash"> / </span> Projects </h1>
@@ -36,6 +37,8 @@ class Pror extends React.Component {
             
            
           </div>
+
+        </div>
        
 
         )
