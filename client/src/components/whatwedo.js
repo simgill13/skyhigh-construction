@@ -62,65 +62,65 @@ class WhatWeDo extends React.Component {
     render() {
        
       return (
-          
-          <div id="whatwedosection" className="WhatWeDoComponent">
-            <div className="wwdMainContainerleft">
-              <div className="innerleft">
-                <div className="innermostleft innermostleft1 ">
-                  <div className='wwdicon'>
-                    <FontAwesome className='fa fa-coffee  coffeeIcon ' size='2x' aria-hidden='true'/>
+          <div className="themainwhatwedocontainer">
+            <div id="whatwedosection" className="WhatWeDoComponent">
+              <div className="wwdMainContainerleft">
+                <div className="innerleft">
+                  <div className="innermostleft innermostleft1 ">
+                    <div className='wwdicon'>
+                      <FontAwesome className='fa fa-coffee  coffeeIcon ' size='2x' aria-hidden='true'/>
+                    </div>
+                    <div className='wwdtext'>
+                      <h4 className='wwdintrotext coffeeIcon'> Introduce</h4> 
+
+                    </div>
+                    <p className='wwdbottomparatext BPtext1'> We discuss our game plan. </p>  
                   </div>
-                  <div className='wwdtext'>
-                    <h4 className='wwdintrotext coffeeIcon'> Introduce</h4> 
+                  <div className="innermostright innermostright1">
+                   <div className='wwdicon'>
+                      <FontAwesome className='fa fa-laptop laptopicon' size='2x' aria-hidden='true'/>
+                    </div>
+                    <div className='wwdtext'>
+                      <h4 className='wwdintrotext laptopicon'> Design</h4>
+                      
+                    </div> 
+                     <p className='wwdbottomparatext BPtext2'> We present our Designs. </p> 
+                  </div>
+                  <div className="innermostleft innermostleft2">
+                    <div className='wwdicon'>
+                      <FontAwesome className='fa fa-globe globeicon ' size='2x' aria-hidden='true'/>
+                    </div>
+                    <div className='wwdtext'>
+                      <h4 className='wwdintrotext globeicon'> experiment</h4>
+                     
+                    </div> 
+                    <p className='wwdbottomparatext BPtext3'> We research for eco friendly materials. </p> 
 
                   </div>
-                  <p className='wwdbottomparatext BPtext1'> We discuss our game plan. </p>  
-                </div>
-                <div className="innermostright innermostright1">
-                 <div className='wwdicon'>
-                    <FontAwesome className='fa fa-laptop laptopicon' size='2x' aria-hidden='true'/>
+                  <div className="innermostright innermostright2">
+                    <div className='wwdicon'>
+                      <FontAwesome className='fa fa-trophy trophyicon ' size='2x' aria-hidden='true'/>
+                    </div>
+                    <div className='wwdtext'>
+                      <h4 className='wwdintrotext trophyicon'> Deliver</h4>
+                     
+                    </div> 
+                    <p className='wwdbottomparatext BPtext4'> We Deliver final product! </p> 
                   </div>
-                  <div className='wwdtext'>
-                    <h4 className='wwdintrotext laptopicon'> Design</h4>
-                    
-                  </div> 
-                   <p className='wwdbottomparatext BPtext2'> We present our Designs. </p> 
-                </div>
-                <div className="innermostleft innermostleft2">
-                  <div className='wwdicon'>
-                    <FontAwesome className='fa fa-globe globeicon ' size='2x' aria-hidden='true'/>
-                  </div>
-                  <div className='wwdtext'>
-                    <h4 className='wwdintrotext globeicon'> experiment</h4>
-                   
-                  </div> 
-                  <p className='wwdbottomparatext BPtext3'> We research for eco friendly materials. </p> 
+                </div> 
 
-                </div>
-                <div className="innermostright innermostright2">
-                  <div className='wwdicon'>
-                    <FontAwesome className='fa fa-trophy trophyicon ' size='2x' aria-hidden='true'/>
-                  </div>
-                  <div className='wwdtext'>
-                    <h4 className='wwdintrotext trophyicon'> Deliver</h4>
-                   
-                  </div> 
-                  <p className='wwdbottomparatext BPtext4'> We Deliver final product! </p> 
-                </div>
-              </div> 
+              </div>
 
-            </div>
+              <div className="wwdMainContainerright">
+                  <img className="whatwedoPic" src={"http://res.cloudinary.com/sds-images/image/upload/v1497040298/homedesign3_lndyy7.jpg"} 
+                           alt="homedesigh" />
+              </div>
 
-            <div className="wwdMainContainerright">
-                <img className="whatwedoPic" src={"http://res.cloudinary.com/sds-images/image/upload/v1497040298/homedesign3_lndyy7.jpg"} 
-                         alt="homedesigh" />
-            </div>
+             
 
-           
-
-          
-          </div>
             
+            </div>
+          </div>
        
 
         )

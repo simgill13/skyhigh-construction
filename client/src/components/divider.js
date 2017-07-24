@@ -22,11 +22,14 @@ class Divider extends React.Component {
     render() {
        
       return (
-          <div id="diveder" className="Divider">
-            <div className="whatwedo">
-            <h3 className="whatwedoText"> WHAT WE DO </h3>
-            </div>
-            <div className="DividerBar">
+
+          <div className="dividermaincomponent">
+            <div id="diveder" className="Divider">
+              <div className="whatwedo">
+              <h3 className="whatwedoText"> WHAT WE DO </h3>
+              </div>
+              <div className="DividerBar">
+              </div>
             </div>
           </div>
        
