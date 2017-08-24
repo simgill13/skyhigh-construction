@@ -1,12 +1,12 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import {toogle,hideLogin,LoggedOut} from '../actions/action';
-import $ from 'jquery';
-import {hashHistory} from 'react-router';
+import {LoggedOut} from '../actions/action';
+// import $ from 'jquery';
+// import {hashHistory} from 'react-router';
 import LoggedInNav from './loggeninnav';
 import UserGraphs from './usergraphs';
-import FontAwesome from 'react-fontawesome';
+// import FontAwesome from 'react-fontawesome';
 import UserHomePics from './usershomepics';
 import Bargraph from './bargraph';
 

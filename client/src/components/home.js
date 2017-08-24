@@ -1,10 +1,10 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
-let imgone = 'http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg'
-let imgtwo = 'http://res.cloudinary.com/sds-images/image/upload/v1496601110/homedesign2_qeh7qw.jpg'
-import {toogle,hideLogin} from '../actions/action';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+// let imgone = 'http://res.cloudinary.com/sds-images/image/upload/v1496601104/homedesign_qcg0xh.jpg'
+// let imgtwo = 'http://res.cloudinary.com/sds-images/image/upload/v1496601110/homedesign2_qeh7qw.jpg'
+// import {hideLogin} from '../actions/action';
 import Nav from './nav';
 import WelcomeMsg from './welcomemsg';
 import WelcomeMsgTwo from './welcomemsgtwo';
@@ -17,35 +17,35 @@ import Sliderone from './sliderone';
 import ContactUs from './contactus';
 import Last from './last';
 import $ from 'jquery';
-import {hashHistory} from 'react-router';
+// import {hashHistory} from 'react-router';
 
 class Home extends React.Component {
    
-	constructor(props) {
-    	super(props);   	
+	// constructor(props) {
+ //    	super(props);   	
     
     	
-    }
+ //    }
  	 
 
     componentDidMount() {
      
         
-        if(this.props.loggenIn === true){
-      hashHistory.push('/LoginHome');
-    }
-    else{
-        hashHistory.push('/');
-    }
+    //     if(this.props.loggenIn === true){
+    //   hashHistory.push('/LoginHome');
+    // }
+    // else{
+    //     hashHistory.push('/');
+    // }
 
         $('a[href*="#"]')
         .not('[href="#"]')
         .not('[href="#0"]')
         .click(function(event) {
         if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
             &&
-            location.hostname == this.hostname
+            location.hostname === this.hostname
         ) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

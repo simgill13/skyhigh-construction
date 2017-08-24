@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router';
+// import {Link} from 'react-router';
 
 
 
 
-import FontAwesome from 'react-fontawesome';
+// import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 
 
@@ -14,10 +14,10 @@ import $ from 'jquery';
 
 
 class UserHomePics extends React.Component {
-  constructor(props) {
-    super(props);     
+  // constructor(props) {
+  //   super(props);     
    
-  }
+  // }
    
  
     componentDidMount() {
@@ -27,6 +27,12 @@ class UserHomePics extends React.Component {
       });
 
       function cycle(){
+        var hello = [
+        '"Lorem ipsum dolor sit amet, luctus amet rutrum, commodo, ac in tellus sit elit leo. Integer amet maecenas semper pretium.Lorem ipsum dolor sit amet, luctus amet rutrum, commodo, ac in tellus sit elit leo. Integer amet maecenas semper pretium"',
+        '"Inceptos a, malesuada potenti lacus et dolores. Aliquam in tristique pellentesque expedita dolor urna"',
+        
+        
+      ]
         var x = 0;
         setInterval(language, 3000);
         function language(){
@@ -40,12 +46,7 @@ class UserHomePics extends React.Component {
           }
         )};
       }
-      var hello = [
-        '"Lorem ipsum dolor sit amet, luctus amet rutrum, commodo, ac in tellus sit elit leo. Integer amet maecenas semper pretium.Lorem ipsum dolor sit amet, luctus amet rutrum, commodo, ac in tellus sit elit leo. Integer amet maecenas semper pretium"',
-        '"Inceptos a, malesuada potenti lacus et dolores. Aliquam in tristique pellentesque expedita dolor urna"',
-        
-        
-      ]
+      
     });
   }
 

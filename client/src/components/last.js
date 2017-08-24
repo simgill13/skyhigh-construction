@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+// import { CSSTransitionGroup } from 'react-transition-group' // ES6
 // import ImageGallery from 'react-image-gallery';
-import Home from './home';
+// import Home from './home';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 
@@ -32,7 +32,7 @@ class Last extends React.Component {
             <div className="bottomlastcomponentdiv">
               <div className="bottomlastleftcomponentdiv bottonlastdivs">
                 <div className="clockinconDiv">
-                  <FontAwesome className='fa fa-clock-o clockicon' size='4x' aria-hidden='true'/>
+                  <FontAwesome className='fa fa-clock-o clockicon' name='clock' size='4x' aria-hidden='true'/>
                 </div>
                 <div className="clockicontext">
                   <h1 >Working Hours </h1>
@@ -47,7 +47,7 @@ class Last extends React.Component {
 
               <div className="bottomlastrightcomponentdiv bottonlastdivs">
                 <div className="clockinconDiv">
-                  <FontAwesome className='fa fa-building-o clockicon' size='4x' aria-hidden='true'/>
+                  <FontAwesome className='fa fa-building-o clockicon' name='building' size='4x' aria-hidden='true'/>
                 </div>
                 <div className="clockicontext">
                   <h1 className="locatedat">Located At </h1>

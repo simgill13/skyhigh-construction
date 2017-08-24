@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+// import { CSSTransitionGroup } from 'react-transition-group' // ES6
 // import ImageGallery from 'react-image-gallery';
-import Home from './home';
+// import Home from './home';
 import FontAwesome from 'react-fontawesome';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 
 
@@ -69,11 +69,11 @@ class Sliderone extends React.Component {
                     </div>
                     <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                       
-                      <span > <FontAwesome className='fa fa-chevron-left backiconse' size='1x' aria-hidden='true'/> </span>
+                      <span > <FontAwesome className='fa fa-chevron-left backiconse' name='backicon'  aria-hidden='true'/> </span>
                       <span className="sr-only">Previous</span>
                     </a>
                     <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                      <span > <FontAwesome className='fa fa-chevron-right backiconse' size='1x' aria-hidden='true'/> </span>
+                      <span > <FontAwesome className='fa fa-chevron-right backiconse' name='righticon'  aria-hidden='true'/> </span>
                       <span className="sr-only">Next</span>
                     </a>
                   </div>

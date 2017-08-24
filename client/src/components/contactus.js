@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+// import { CSSTransitionGroup } from 'react-transition-group' // ES6
 // import ImageGallery from 'react-image-gallery';
-import Home from './home';
+// import Home from './home';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 
@@ -56,9 +56,9 @@ class ContactUs extends React.Component {
                 <p>  Project Manager </p>
                 <p> Over 5 years of extensive experience working as a project manager </p>
                 <div className="memberIcons">
-                <FontAwesome className='fa fa-envelope-o memicon' size='2x' aria-hidden='true'/>
-                <FontAwesome className='fa fa-facebook-official memicon' size='2x' aria-hidden='true'/>
-                <FontAwesome className='fa fa-instagram memicon' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-envelope-o memicon' name='envelope' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-facebook-official memicon' name='facebook' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-instagram memicon' name='itagram' size='2x' aria-hidden='true'/>
                 </div>
               </div>
               
@@ -69,9 +69,9 @@ class ContactUs extends React.Component {
                 <p> Role </p>
                 <p> Over 5 years of extensive experience working as a project manager </p>
                 <div className="memberIcons">
-                 <FontAwesome className='fa fa-envelope-o memicon' size='2x' aria-hidden='true'/>
-                <FontAwesome className='fa fa-facebook-official memicon' size='2x' aria-hidden='true'/>
-                <FontAwesome className='fa fa-instagram memicon' size='2x' aria-hidden='true'/>
+                 <FontAwesome className='fa fa-envelope-o memicon' name='envelope' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-facebook-official memicon' name='facebook' size='2x' aria-hidden='true'/>
+                <FontAwesome className='fa fa-instagram memicon' name='instagram' size='2x' aria-hidden='true'/>
                 </div>
               </div>
               

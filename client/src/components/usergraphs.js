@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {} from '../actions/action';
-import $ from 'jquery';
+// import $ from 'jquery';
 import {Doughnut} from 'react-chartjs-2';
-import Bargraph from  './bargraph';
+// import Bargraph from  './bargraph';
 import FontAwesome from 'react-fontawesome';
 
 
@@ -60,9 +60,9 @@ class UserGraphs extends React.Component {
             <h1 className="welcometext"> Hi, Demo </h1>
             <h3 className="Pmtext"> Your Project Manager </h3>
             <p className="ugname"> Sim Gill</p>
-            <FontAwesome className='fa fa-facebook-square gfacebookicon ggiconcolor' size='1x' aria-hidden='true'/>
-            <FontAwesome className='fa fa-twitter-square gtwittericon ggiconcolor ' size='1x' aria-hidden='true'/>
-            <FontAwesome className='fa fa-instagram finstagramicon ggiconcolor' size='1x' aria-hidden='true'/>
+            <FontAwesome className='fa fa-facebook-square gfacebookicon ggiconcolor' name='facebook'  aria-hidden='true'/>
+            <FontAwesome className='fa fa-twitter-square gtwittericon ggiconcolor' name='twitter'  aria-hidden='true'/>
+            <FontAwesome className='fa fa-instagram finstagramicon ggiconcolor' name='instagram'  aria-hidden='true'/>
             <h3 className="Pmtext"> Remaining Budget </h3>
             <p> <span> $ </span> 1,350,000 </p>
            

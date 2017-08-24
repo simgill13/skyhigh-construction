@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router';
+// import {Link} from 'react-router';
 import {LoggedOut,clickedProjections,clickedDash} from '../actions/action';
 
 
@@ -56,7 +56,7 @@ class LoggedInNav extends React.Component {
           <div className="loggedInrightside">
           <ul className="loggedInnavList" >
             <li  onClick={this.dashbord} className="dashboardtext dashboardtextword dbtwunderline"> Dashboard  </li>
-             <FontAwesome className='fa fa-viacoin dashboardtext logginInIcon' size='5x' aria-hidden='true'/>
+             <FontAwesome className='fa fa-viacoin dashboardtext logginInIcon' name='viacoin' size='5x' aria-hidden='true'/>
             <li onClick={this.projections} className="dashboardtext projectionstext "> Projections </li>
             
           </ul>

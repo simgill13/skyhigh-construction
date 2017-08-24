@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+// import { CSSTransitionGroup } from 'react-transition-group' // ES6
 // import ImageGallery from 'react-image-gallery';
-import Home from './home';
+// import Home from './home';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 
@@ -68,7 +68,7 @@ class WhatWeDo extends React.Component {
                 <div className="innerleft">
                   <div className="innermostleft innermostleft1 ">
                     <div className='wwdicon'>
-                      <FontAwesome className='fa fa-coffee  coffeeIcon ' size='2x' aria-hidden='true'/>
+                      <FontAwesome className='fa fa-coffee  coffeeIcon ' name='cofee' size='2x' aria-hidden='true'/>
                     </div>
                     <div className='wwdtext'>
                       <h4 className='wwdintrotext coffeeIcon'> Introduce</h4> 
@@ -78,7 +78,7 @@ class WhatWeDo extends React.Component {
                   </div>
                   <div className="innermostright innermostright1">
                    <div className='wwdicon'>
-                      <FontAwesome className='fa fa-laptop laptopicon' size='2x' aria-hidden='true'/>
+                      <FontAwesome className='fa fa-laptop laptopicon' name='laptop' size='2x' aria-hidden='true'/>
                     </div>
                     <div className='wwdtext'>
                       <h4 className='wwdintrotext laptopicon'> Design</h4>
@@ -88,7 +88,7 @@ class WhatWeDo extends React.Component {
                   </div>
                   <div className="innermostleft innermostleft2">
                     <div className='wwdicon'>
-                      <FontAwesome className='fa fa-globe globeicon ' size='2x' aria-hidden='true'/>
+                      <FontAwesome className='fa fa-globe globeicon' name='globe' size='2x' aria-hidden='true'/>
                     </div>
                     <div className='wwdtext'>
                       <h4 className='wwdintrotext globeicon'> experiment</h4>
@@ -99,7 +99,7 @@ class WhatWeDo extends React.Component {
                   </div>
                   <div className="innermostright innermostright2">
                     <div className='wwdicon'>
-                      <FontAwesome className='fa fa-trophy trophyicon ' size='2x' aria-hidden='true'/>
+                      <FontAwesome className='fa fa-trophy trophyicon' name='trophy' size='2x' aria-hidden='true'/>
                     </div>
                     <div className='wwdtext'>
                       <h4 className='wwdintrotext trophyicon'> Deliver</h4>
@@ -135,9 +135,8 @@ class WhatWeDo extends React.Component {
 
 
 const mapStateToProps = (state) => ({
-  toogle:state.toogle,
-  image:state.image
+ 
 
 });
 
-export default connect()(WhatWeDo);
+export default connect(mapStateToProps)(WhatWeDo);

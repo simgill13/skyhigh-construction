@@ -1,16 +1,16 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
+// import {Link} from 'react-router';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+// import { CSSTransitionGroup } from 'react-transition-group' // ES6
 // import ImageGallery from 'react-image-gallery';
-import Home from './home';
-import FontAwesome from 'react-fontawesome';
-import $ from 'jquery';
+// import Home from './home';
+// import FontAwesome from 'react-fontawesome';
+// import $ from 'jquery';
 import {loginUser} from '../actions/action';
-import {hashHistory} from 'react-router';
-import * as Cookies from 'js-cookie';
+// import {hashHistory} from 'react-router';
+// import * as Cookies from 'js-cookie';
 
 
 
@@ -45,9 +45,10 @@ class Login extends React.Component {
     render() {
       console.log("LOOK HERE",this.props.InvalidCred)
 
-      if(this.props.loggenIn===true){
-        hashHistory.push('/');
-      }
+      // if(this.props.loggenIn===true){
+        
+      //   hashHistory.push('/');
+      // }
     	
       let errMsg;
       if(this.props.InvalidCred ===true){
