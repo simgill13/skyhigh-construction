@@ -52,18 +52,18 @@ class AboutUs extends React.Component {
               <div className="box1 color">
                 <FontAwesome className='fa fa-handshake-o iconcolor1' name='handshake' size='3x' aria-hidden='true'/>
                 <h3 className="boxtext" > Mission </h3>
-                <p> Some text explaining what the mission statement is </p>
+                <p> To help our customers realize their full creative potential. </p>
               </div>
               <div className="box2 color">
                <FontAwesome className='fa fa-star-o iconcolor2' name='star' size='3x' aria-hidden='true'/>
                 <h3 className="boxtext"> Vision </h3>
-                <p> Some text explaining what the mission statement is </p>
+                <p> To build world class homes, recognized across the world. </p>
 
               </div>
               <div className="box3 color">
                <FontAwesome className='fa fa-briefcase iconcolor3' name='brifcase' size='3x' aria-hidden='true'/>
                 <h3 className="boxtext"> Work </h3>
-                <p> Some text explaining what the mission statement is </p>
+                <p> We promise to deliver great work on time and on budget. </p>
 
               </div>
               
