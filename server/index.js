@@ -205,15 +205,18 @@ function runServer(port=3001) {
     return new Promise((resolve, reject) => {
 
 
-         mongoose.connect(DATABASE_URL, err => {
-            if(err) {
-              return reject(err);
-        }
-            console.log('Db connected');
-            server = app.listen(port, () => {
-                resolve();
-            }).on('error', reject);
-        });
+        //  mongoose.connect(DATABASE_URL, err => {
+        //     if(err) {
+        //       return reject(err);
+        // }
+        //     console.log('Db connected');
+        //     server = app.listen(port, () => {
+        //         resolve();
+        //     }).on('error', reject);
+        // });
+        server = app.listen(port, () => {
+          resolve();
+      }).on('error', reject);
     });
 }
 
