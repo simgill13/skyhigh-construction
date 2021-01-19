@@ -30,7 +30,7 @@ class Login extends React.Component {
    	}
 
  	sim(email,password){
-	 	console.log('hi')
+
 	 	console.log(email)
 	 	console.log(password)
 
@@ -43,7 +43,6 @@ class Login extends React.Component {
  	}
 
     render() {
-      console.log("LOOK HERE",this.props.InvalidCred)
 
       // if(this.props.loggenIn===true){
         

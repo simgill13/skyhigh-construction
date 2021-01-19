@@ -42,28 +42,32 @@ export const clickedDash = () =>({
 })
 export const loginUser = (email, password) => dispatch => {
   const encodedLoginInfo = base64.encode(`${email.toLowerCase()}:${password}`)
-  return fetch(`/api/usersky/validate/${email}`, {
-    headers: {
-        "Authorization": "Basic " + encodedLoginInfo,
-    },
-    // credentials: 'same-origin',
-  })
-  .then(response => {
-   return response.json() 
-  })
-  .then(json => {
-  	console.log('returned login obj', json) 
-     dispatch(validCred())
+    dispatch(validCred())
     dispatch(LoggedIn())
-  	hashHistory.push('/');
-  })
-  .catch(err => {
-    if(err){
-      console.log(" invalid credentials")
-      dispatch(InvalidCred())
-    }
+    hashHistory.push('/');
+    return
+  // return fetch(`/api/usersky/validate/${email}`, {
+  //   headers: {
+  //       "Authorization": "Basic " + encodedLoginInfo,
+  //   },
+  //   // credentials: 'same-origin',
+  // })
+  // .then(response => {
+  //  return response.json() 
+  // })
+  // .then(json => {
+  // 	console.log('returned login obj', json) 
+  //    dispatch(validCred())
+  //   dispatch(LoggedIn())
+  // 	hashHistory.push('/');
+  // })
+  // .catch(err => {
+  //   if(err){
+  //     console.log(" invalid credentials")
+  //     dispatch(InvalidCred())
+  //   }
 
-    console.log(err);
+  //   console.log(err);
    
-  })
+  // })
 }
